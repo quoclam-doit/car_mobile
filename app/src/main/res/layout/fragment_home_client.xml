@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".Fragment.HomeClientFragment">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:scrollbars="none"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:layout_height="match_parent">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:paddingTop="25dp"
+                android:background="@drawable/background_full_screen"
+                android:paddingBottom="50dp"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:layout_marginLeft="20dp"
+                    android:src="@drawable/taixe"/>
+                <TextView
+                    android:id="@+id/tv_full_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left|center"
+                    android:layout_marginLeft="20dp"
+                    android:textSize="20dp"
+                    android:textStyle="bold"
+                    android:text="Full Name"/>
+
+            </LinearLayout>
+
+            <androidx.viewpager.widget.ViewPager
+                android:id="@+id/viewpager"
+                android:layout_width="match_parent"
+                android:layout_marginTop="10dp"
+                android:layout_height="200dp"/>
+
+          <me.relex.circleindicator.CircleIndicator
+              android:id="@+id/circle_indicator"
+              android:layout_width="wrap_content"
+              android:layout_height="30dp"
+              android:layout_marginTop="-28dp"
+              android:layout_gravity="center_horizontal"/>
+            <TextView
+                android:layout_marginTop="20dp"
+                android:layout_width="match_parent"
+                android:text="Thuê xe"
+                android:paddingLeft="15dp"
+                android:textStyle="bold"
+                android:textSize="25dp"
+                android:textColor="#FF5722"
+                android:layout_marginBottom="10dp"
+                android:layout_height="wrap_content"/>
+
+
+
+            <LinearLayout
+                android:gravity="left"
+                android:paddingLeft="20dp"
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:layout_height="wrap_content">
+                <LinearLayout
+                    android:id="@+id/layout_tu_lai"
+                    android:padding="10dp"
+                    android:layout_marginHorizontal="20dp"
+                    android:background="@drawable/bg_btn_thue"
+                    android:layout_width="120dp"
+                    android:orientation="vertical"
+                    android:gravity="center"
+                    android:layout_height="120dp">
+
+
+                <ImageView
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:src="@drawable/car_"/>
+                    <TextView
+
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="18dp"
+                        android:textStyle="bold"
+                        android:textColor="#FD7000"
+                        android:text="Tự lái"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:padding="10dp"
+                    android:layout_width="120dp"
+                    android:id="@+id/layout_co_lai"
+                    android:layout_marginHorizontal="20dp"
+                    android:orientation="vertical"
+                    android:gravity="center"
+                    android:background="@drawable/bg_btn_thue"
+                    android:layout_height="120dp">
+
+
+                    <ImageView
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"
+                        android:src="@drawable/car_driver"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="18dp"
+                        android:textStyle="bold"
+                        android:textColor="#FD7000"
+                        android:text="Có lái"/>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+    </ScrollView>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</FrameLayout>

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:padding="15dp"
+    android:gravity="bottom"
+    android:layout_height="match_parent">
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:layout_width="99dp"
+        android:layout_height="90dp"
+        android:src="@drawable/taixe"
+        />
+
+    <TextView
+        android:id="@+id/ten_tai_xe"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:text="Tên tài xế"
+        android:textColor="#5E3501"
+        android:textSize="20dp"
+        android:textStyle="bold" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:textSize="16dp"
+        android:layout_marginTop="5dp"
+        android:textColor="@color/black"
+        />
+
+</LinearLayout>

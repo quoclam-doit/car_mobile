@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:gravity="center"
+        android:padding="10dp"
+        android:text="Chi tiết công việc"
+        android:textStyle="bold"
+        android:textColor="#FF5722"
+        android:background="@drawable/vien_background"
+        android:textSize="22dp" />
+    <TextView
+        android:textSize="15dp"
+        android:text="Tên khách hàng"
+        android:textStyle="bold"
+        android:paddingLeft="5dp"
+        android:textColor="#FF5722"
+        android:layout_marginTop="5dp"
+        android:layout_width="match_parent"
+        android:layout_marginHorizontal="20dp"
+        android:layout_height="wrap_content"/>
+    <EditText
+        android:paddingLeft="10dp"
+        android:layout_width="match_parent"
+        android:layout_marginHorizontal="20dp"
+        android:layout_height="50dp"
+        android:focusable="false"
+        android:background="@drawable/bg_btn_thue"
+        android:hint="Tên khách hàng"
+        android:id="@+id/ed_name_clientdr"
+        android:inputType="number"
+        />
+    <TextView
+        android:textSize="15dp"
+        android:text="Địa điểm"
+        android:textStyle="bold"
+        android:paddingLeft="5dp"
+        android:textColor="#FF5722"
+        android:layout_marginTop="5dp"
+        android:layout_width="match_parent"
+        android:layout_marginHorizontal="20dp"
+        android:layout_height="wrap_content"/>
+    <EditText
+        android:paddingLeft="10dp"
+        android:layout_width="match_parent"
+        android:layout_marginHorizontal="20dp"
+        android:layout_height="50dp"
+
+        android:background="@drawable/bg_btn_thue"
+        android:hint="Địa điểm"
+        android:focusable="false"
+        android:inputType="number"
+        android:id="@+id/ed_location_dr"
+        />
+    <TextView
+        android:textSize="15dp"
+        android:text="Ngày bắt đầu"
+        android:textStyle="bold"
+        android:paddingLeft="5dp"
+        android:textColor="#FF5722"
+        android:layout_marginTop="5dp"
+        android:layout_width="match_parent"
+        android:layout_marginHorizontal="20dp"
+        android:layout_height="wrap_content"/>
+    <EditText
+        android:layout_width="match_parent"
+
+        android:hint="Ngày bắt đầu"
+        android:focusable="false"
+
+        android:layout_marginHorizontal="20dp"
+        android:paddingLeft="10dp"
+        android:layout_height="50dp"
+        android:background="@drawable/bg_btn_thue"
+        android:inputType="textPersonName"
+        android:id="@+id/ed_date_startdr"
+        />
+    <TextView
+        android:textSize="15dp"
+        android:text="Ngày kết thúc"
+        android:textStyle="bold"
+        android:paddingLeft="5dp"
+        android:textColor="#FF5722"
+        android:layout_marginTop="5dp"
+        android:layout_width="match_parent"
+        android:layout_marginHorizontal="20dp"
+        android:layout_height="wrap_content"/>
+    <EditText
+        android:layout_width="match_parent"
+
+        android:hint="Ngày kết thúc"
+        android:focusable="false"
+
+        android:layout_marginHorizontal="20dp"
+        android:paddingLeft="10dp"
+        android:layout_height="50dp"
+        android:background="@drawable/bg_btn_thue"
+        android:inputType="textPersonName"
+        android:id="@+id/ed_date_enddr"
+        />
+</LinearLayout>

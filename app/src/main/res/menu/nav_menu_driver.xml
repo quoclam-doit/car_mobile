@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group android:checkableBehavior="single" >
+
+        <item
+            android:title="Home"
+            android:id="@+id/driverHome"
+            android:icon="@drawable/ic_baseline_home_24"
+            />
+
+        <item
+            android:title="Công việc"
+            android:id="@+id/driverWork"
+            android:icon="@drawable/ic_baseline_work_24"
+            />
+<!--        <item-->
+<!--            android:icon="@drawable/ic_baseline_pending_actions_24"-->
+<!--            android:title="Lịch Trình"-->
+<!--            android:id="@+id/driverActivity"-->
+<!--            />-->
+<!--        <item-->
+<!--            android:title="Thu nhập"-->
+<!--            android:id="@+id/driverThuNhap"-->
+<!--            android:icon="@drawable/ic_baseline_attach_money_24"-->
+<!--            />-->
+    </group>
+    <item android:title="Tài khoản" >
+        <menu >
+            <item
+                android:title="Hồ Sơ"
+                android:icon="@drawable/ic_baseline_person_24"
+                android:id="@+id/driverTroGiup"
+                />
+            <item
+                android:title="Thoát"
+                android:id="@+id/driverThoat"
+                android:icon="@drawable/ic_baseline_exit_to_app_24"
+                />
+
+        </menu>
+    </item>
+
+</menu>

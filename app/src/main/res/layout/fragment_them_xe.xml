@@ -1,0 +1,236 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Fragment.ThemXeFragment">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:gravity="center"
+        android:padding="10dp"
+        android:text="Thêm thông tin xe"
+        android:textColor="#FFFFFF"
+        android:background="#FF5722"
+        android:textSize="22dp" />
+    <ImageView
+        android:layout_width="260dp"
+        android:layout_marginTop="3dp"
+        android:layout_gravity="center"
+        android:layout_height="120dp"
+        android:src="@drawable/imgdriver"
+        android:id="@+id/img_car_add"
+        />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="10dp">
+        <TextView
+            android:textSize="15dp"
+            android:text="Tên xe"
+            android:textStyle="bold"
+            android:textColor="#FF5722"
+            android:layout_width="50dp"
+            android:layout_marginLeft="20dp"
+            android:layout_height="wrap_content"
+
+            />
+
+        <TextView
+            android:id="@+id/error_ten_xe"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+
+            android:paddingLeft="10dp" />
+    </LinearLayout>
+
+
+    <EditText
+        android:background="@drawable/bg_edit_text_line_bottom"
+        android:layout_marginHorizontal="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:hint="Tên xe"
+        android:paddingLeft="10dp"
+        android:inputType="textPersonName"
+        android:id="@+id/ed_name_car_add"
+        />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="10dp">
+        <TextView
+            android:textSize="15dp"
+            android:text="Biển xe"
+            android:textStyle="bold"
+            android:textColor="#FF5722"
+            android:layout_width="50dp"
+            android:layout_marginLeft="20dp"
+            android:layout_height="wrap_content"
+
+            />
+
+        <TextView
+            android:id="@+id/error_bien_xe"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingLeft="10dp" />
+    </LinearLayout>
+    <EditText
+
+        android:background="@drawable/bg_edit_text_line_bottom"
+        android:layout_marginHorizontal="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:hint="Biển xe"
+
+        android:paddingLeft="10dp"
+        android:inputType="textPersonName"
+        android:id="@+id/ed_bien_car_add"
+        />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="10dp">
+        <TextView
+            android:textSize="15dp"
+            android:text="Giờ theo ngày"
+            android:textStyle="bold"
+            android:textColor="#FF5722"
+            android:layout_width="99dp"
+            android:layout_marginLeft="20dp"
+            android:layout_height="wrap_content"
+
+            />
+
+        <TextView
+            android:id="@+id/error_gia_ngay"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingLeft="10dp" />
+    </LinearLayout>
+    <EditText
+        android:paddingLeft="10dp"
+        android:layout_width="match_parent"
+        android:layout_marginHorizontal="20dp"
+        android:layout_height="50dp"
+        android:background="@drawable/bg_edit_text_line_bottom"
+        android:hint="Giờ xe theo ngày"
+        android:id="@+id/ed_price_date_add"
+        android:inputType="number"
+        />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="10dp">
+        <TextView
+            android:textSize="15dp"
+            android:text="Giờ theo giờ"
+            android:textStyle="bold"
+            android:textColor="#FF5722"
+            android:layout_width="99dp"
+            android:layout_marginLeft="20dp"
+            android:layout_height="wrap_content"
+
+            />
+
+        <TextView
+            android:id="@+id/error_gia_gio"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingLeft="10dp" />
+    </LinearLayout>
+    <EditText
+        android:paddingLeft="10dp"
+        android:layout_width="match_parent"
+        android:layout_marginHorizontal="20dp"
+        android:layout_height="50dp"
+        android:background="@drawable/bg_edit_text_line_bottom"
+        android:hint="Giá xe theo giờ"
+        android:inputType="number"
+        android:id="@+id/ed_price_time_add"
+        />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="10dp">
+        <TextView
+            android:textSize="15dp"
+            android:text="Ngày đăng kiểm"
+            android:textStyle="bold"
+            android:textColor="#FF5722"
+            android:layout_width="110dp"
+            android:layout_marginLeft="20dp"
+            android:layout_height="wrap_content"
+
+            />
+
+        <TextView
+            android:id="@+id/error_dang_kiem"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingLeft="10dp" />
+    </LinearLayout>
+    <EditText
+        android:layout_width="match_parent"
+        android:focusable="false"
+        android:layout_height="50dp"
+        android:paddingLeft="10dp"
+        android:background="@drawable/bg_btn_thue"
+        android:hint="Ngày đăng kiểm"
+        android:layout_marginHorizontal="20dp"
+        android:inputType="textPersonName"
+        android:id="@+id/ed_date_kt_add"
+        />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="10dp">
+        <TextView
+            android:textSize="15dp"
+            android:text="Ngày bảo dưỡng"
+            android:textStyle="bold"
+            android:textColor="#FF5722"
+            android:layout_width="110dp"
+            android:layout_marginLeft="20dp"
+            android:layout_height="wrap_content"
+
+            />
+
+        <TextView
+            android:id="@+id/error_bao_duong"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingLeft="10dp" />
+    </LinearLayout>
+    <EditText
+        android:layout_width="match_parent"
+        android:hint="Ngày bảo dưỡng"
+        android:focusable="false"
+        android:layout_marginHorizontal="20dp"
+        android:paddingLeft="10dp"
+        android:layout_height="50dp"
+        android:background="@drawable/bg_btn_thue"
+        android:inputType="textPersonName"
+        android:id="@+id/ed_date_bd_add"
+        />
+
+    <Button
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="Thêm xe"
+        android:id="@+id/btn_add_xe_add"
+        android:background="@drawable/bg_button_add_xe"
+        android:layout_marginTop="5dp"
+        android:textColor="#FFFFFF"
+        />
+
+</LinearLayout>

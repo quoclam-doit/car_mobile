@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".SearchVehiclesCoLai">
+
+
+
+
+        <LinearLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="0dp"
+            android:orientation="vertical"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+           >
+            <androidx.appcompat.widget.Toolbar
+                android:id="@+id/toolbar_cl"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                android:background="#FF5722"
+                app:layout_constraintTop_toTopOf="parent" />
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:paddingLeft="20dp"
+                android:text="ĐỊA ĐIỂM"
+                android:textColor="#FF5722"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/ed_đia_diem_cl"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="15dp"
+                android:drawableStart="@drawable/ic_baseline_location_on_24"
+                android:drawablePadding="5dp"
+                android:ems="10"
+                android:hint="địa điểm nhận xe"
+                android:inputType="textPersonName" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:paddingLeft="10dp"
+                android:text="NGÀY NHẬN"
+                android:textColor="#FF5722"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+
+
+                <TextView
+                    android:id="@+id/date_picker_nhan_cl"
+                    android:layout_width="180dp"
+                    android:background="@drawable/vien_background"
+                    android:layout_height="40dp"
+                    android:layout_marginHorizontal="15dp"
+                    android:drawableStart="@drawable/ic_baseline_access_time_filled_24"
+                    android:drawablePadding="10dp"
+                    android:ems="10"
+                    android:gravity="center|left"
+                    android:paddingLeft="10dp"
+                    android:text="Ngày nhận"
+                    android:textSize="20dp" />
+                <TextView
+                    android:id="@+id/tv_hour_nhan_cl"
+                    android:layout_width="80dp"
+                    android:layout_height="40dp"
+                    android:background="@drawable/vien_background"
+
+                    android:ems="10"
+                    android:gravity="center|left"
+                    android:paddingLeft="10dp"
+                    android:text="00:00"
+                    android:textSize="20dp" />
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:paddingLeft="10dp"
+                android:text="NGÀY TRẢ"
+                android:textColor="#FF5722"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/date_picker_tra_cl"
+                android:background="@drawable/vien_background"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginHorizontal="15dp"
+                android:drawableStart="@drawable/ic_baseline_access_time_filled_24"
+                android:drawablePadding="10dp"
+                android:ems="10"
+                android:gravity="center|left"
+                android:paddingLeft="0dp"
+                android:text="Ngày trả"
+                android:textSize="20dp" />
+
+            <Button
+                android:id="@+id/btn_tim_xe_cl"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="20dp"
+                android:layout_marginVertical="20dp"
+                android:background="#FF5722"
+                android:text="Tìm xe"
+                android:textColor="@color/white" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recy_vehicles_cl"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+            </androidx.recyclerview.widget.RecyclerView>
+
+        </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

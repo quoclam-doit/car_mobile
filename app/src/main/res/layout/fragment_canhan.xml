@@ -1,0 +1,390 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="800dp"
+        android:orientation="vertical"
+        android:background="#FFFFFF">
+        <LinearLayout
+            android:background="#B8E6EC"
+            android:layout_width="match_parent"
+            android:layout_height="160dp"
+            android:orientation="horizontal"
+            >
+            <ImageView
+                android:layout_marginLeft="10dp"
+                android:layout_gravity="center_vertical"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:src="@drawable/taixe"
+                />
+
+
+
+                <TextView
+                    android:id="@+id/tv_tkcanhan"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_margin="5dp"
+                    android:layout_marginLeft="20dp"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="10dp"
+                    android:text="Tên tài khoản"
+                    android:textColor="@color/black"
+                    android:textSize="20dp"
+                    android:layout_gravity="center"
+                    android:textStyle="bold" />
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="#A5A5A5"/>
+        <LinearLayout
+            android:id="@+id/account_manager"
+            android:background="@drawable/custom_canhantv"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_gravity="center_vertical"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="10dp"
+                android:src="@drawable/ic_ttuser" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:textColor="@color/black"
+                    android:paddingLeft="10dp"
+                    android:gravity="center_vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+
+                    android:layout_marginLeft="20dp"
+                    android:text="Tài khoản"
+                    android:textStyle="bold"
+                    android:textSize="22dp" />
+
+                <TextView
+                    android:paddingLeft="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:gravity="center_vertical"
+                    android:layout_marginLeft="20dp"
+                    android:text="Quản lí thông tin cá nhân"
+                    android:textSize="17dp" />
+            </LinearLayout>
+        </LinearLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="#A5A5A5"/>
+
+<!--        <View-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="2dp"-->
+<!--            android:background="#A5A5A5"/>-->
+        <LinearLayout
+            android:id="@+id/hd_myHD"
+            android:background="@drawable/custom_canhantv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:onClick="hd_myHD1">
+
+            <ImageView
+                android:layout_gravity="center_vertical"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="10dp"
+                android:src="@drawable/ic_myhoadon" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:textColor="@color/black"
+                    android:paddingLeft="10dp"
+                    android:gravity="center_vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+
+                    android:layout_marginLeft="20dp"
+                    android:text="Hóa đơn của tôi"
+                    android:textStyle="bold"
+                    android:textSize="22dp" />
+
+                <TextView
+                    android:paddingLeft="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:gravity="center_vertical"
+
+                    android:layout_marginLeft="20dp"
+                    android:text="Quản lí thông tin cá nhân"
+                    android:textSize="17dp" />
+            </LinearLayout>
+        </LinearLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="#A5A5A5"/>
+        <LinearLayout
+            android:id="@+id/huy_don"
+            android:background="@drawable/custom_canhantv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_gravity="center_vertical"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="10dp"
+                android:src="@drawable/ic_hoadonhuy" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:textColor="@color/black"
+                    android:paddingLeft="10dp"
+                    android:gravity="center_vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+
+                    android:layout_marginLeft="20dp"
+                    android:text="Hóa đơn đã hủy"
+                    android:textStyle="bold"
+                    android:textSize="22dp" />
+
+                <TextView
+                    android:paddingLeft="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:gravity="center_vertical"
+
+                    android:layout_marginLeft="20dp"
+                    android:text="Quản lí thông tin cá nhân"
+                    android:textSize="17dp" />
+            </LinearLayout>
+        </LinearLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="#A5A5A5"/>
+        <LinearLayout
+
+            android:background="@drawable/custom_canhantv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <ImageView
+                android:layout_gravity="center_vertical"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="10dp"
+                android:src="@drawable/ic_mymap" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:layout_marginLeft="20dp"
+                    android:text="Địa chỉ của tôi"
+                    android:paddingLeft="10dp"
+                    android:textColor="@color/black"
+                    android:textSize="22dp"
+                    android:textStyle="bold"
+                    android:gravity="center_vertical"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+
+                    android:layout_marginLeft="20dp"
+                    android:text="Quản lí địa chỉ giao xe tận nơi"
+                    android:textSize="17dp"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="10dp"/>
+            </LinearLayout>
+        </LinearLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="#A5A5A5"/>
+<!--        <LinearLayout-->
+<!--            android:background="@drawable/custom_canhantv"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:orientation="horizontal">-->
+<!--            <ImageView-->
+<!--                android:layout_gravity="center_vertical"-->
+<!--                android:layout_width="60dp"-->
+<!--                android:layout_height="60dp"-->
+<!--                android:layout_marginLeft="10dp"-->
+<!--                android:layout_marginTop="10dp"-->
+<!--                android:layout_marginRight="10dp"-->
+<!--                android:layout_marginBottom="10dp"-->
+<!--                android:src="@drawable/ic_mybanking_24" />-->
+
+<!--            <LinearLayout-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_marginTop="10dp"-->
+<!--                android:orientation="vertical">-->
+
+<!--                <TextView-->
+<!--                    android:paddingLeft="10dp"-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="30dp"-->
+<!--                    android:layout_margin="5dp"-->
+<!--                    android:layout_marginLeft="20dp"-->
+<!--                    android:text="Thẻ của tôi"-->
+<!--                    android:textSize="22dp"-->
+<!--                    android:textStyle="bold"-->
+<!--                    android:textColor="@color/black"-->
+<!--                    android:gravity="center_vertical"/>-->
+
+<!--                <TextView-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="30dp"-->
+<!--                    android:layout_margin="5dp"-->
+<!--                    android:layout_marginLeft="20dp"-->
+<!--                    android:text="Thông tin thẻ đã liên kết Beecar"-->
+<!--                    android:textSize="17dp"-->
+<!--                    android:paddingLeft="10dp"-->
+<!--                    android:gravity="center_vertical"/>-->
+<!--            </LinearLayout>-->
+<!--        </LinearLayout>-->
+
+<!--        <LinearLayout-->
+<!--            android:background="@drawable/custom_canhantv"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:orientation="horizontal">-->
+<!--            <ImageView-->
+<!--                android:layout_gravity="center_vertical"-->
+<!--                android:layout_width="60dp"-->
+<!--                android:layout_height="60dp"-->
+<!--                android:layout_marginLeft="10dp"-->
+<!--                android:layout_marginTop="10dp"-->
+<!--                android:layout_marginRight="10dp"-->
+<!--                android:layout_marginBottom="10dp"-->
+<!--                android:src="@drawable/ic_quatang_24" />-->
+
+<!--            <LinearLayout-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_marginTop="10dp"-->
+<!--                android:orientation="vertical">-->
+
+<!--                <TextView-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="30dp"-->
+<!--                    android:layout_margin="5dp"-->
+<!--                    android:layout_marginLeft="20dp"-->
+<!--                    android:text="Quà tặng"-->
+<!--                    android:textSize="22dp"-->
+<!--                    android:gravity="center_vertical"-->
+<!--                    android:textStyle="bold"-->
+<!--                    android:textColor="@color/black"-->
+<!--                    android:paddingLeft="10dp"/>-->
+
+<!--                <TextView-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="30dp"-->
+<!--                    android:layout_margin="5dp"-->
+<!--                    android:layout_marginLeft="20dp"-->
+<!--                    android:text="Các ưu đãi dành cho bạn"-->
+<!--                    android:textSize="17dp"-->
+<!--                    android:gravity="center_vertical"-->
+<!--                    android:paddingLeft="10dp"/>-->
+<!--            </LinearLayout>-->
+<!--        </LinearLayout>-->
+<!--        <View-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="2dp"-->
+<!--            android:background="#A5A5A5"/>-->
+        <LinearLayout
+
+            android:id="@+id/btn_dang_xuat"
+            android:background="@drawable/custom_canhantv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <ImageView
+                android:layout_gravity="center_vertical"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="10dp"
+                android:src="@drawable/ic_dangxuat" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_margin="5dp"
+                android:layout_marginLeft="20dp"
+                android:text="Đăng xuất"
+                android:layout_gravity="center"
+                android:textSize="22dp"
+                android:gravity="center_vertical"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:paddingLeft="10dp"/>
+
+        </LinearLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="#A5A5A5"
+            android:layout_marginBottom="50dp"/>
+
+
+
+    </LinearLayout>
+
+
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

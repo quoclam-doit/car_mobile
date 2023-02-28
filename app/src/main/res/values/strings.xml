@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Bee Car</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="navigationdrawer_driver_open">Open navigation drawer for driver</string>
+    <string name="navigationdrawer_driver_close">Close navigation drawer for driver</string>
+    <string name="navigationquanly_driver_open">Open navigation quan ly for driver</string>
+    <string name="navigationquanly_driver_close">Close navigation quan ly for driver</string>
+</resources>

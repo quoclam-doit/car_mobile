@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group android:checkableBehavior="single" >
+
+        <item
+        android:title="home"
+        android:id="@+id/home"
+        android:icon="@drawable/ic_baseline_home_24"
+        />
+        <item
+            android:title="Quản lý Hóa Đơn"
+            android:id="@+id/QLHome"
+            android:icon="@drawable/ic_baseline_attach_money_24"
+            />
+        <item
+            android:title="Quản Lý Tài Xế"
+            android:id="@+id/QLTaiXe"
+            android:icon="@drawable/ic_baseline_person_24"
+            />
+        <item
+            android:title="Quản Lý Xe"
+            android:id="@+id/QLXe"
+            android:icon="@drawable/ic_car"
+            />
+
+<!--        <item-->
+<!--            android:title="Quản Lý Xe"-->
+<!--            android:id="@+id/driverWork"-->
+<!--            android:icon="@drawable/ic_car"-->
+<!--            />-->
+        <item android:title="Tài khoản" >
+            <menu >
+                <item
+                    android:title="Thoát"
+                    android:id="@+id/QLThoat"
+                    android:icon="@drawable/ic_baseline_exit_to_app_24"
+                    />
+
+            </menu>
+        </item>
+
+    </group>
+</menu>
