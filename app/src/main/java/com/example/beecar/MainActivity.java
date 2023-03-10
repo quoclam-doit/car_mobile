@@ -157,8 +157,9 @@ public class MainActivity extends AppCompatActivity {
                         return;
                     }
                 }
-//                else {
-//                    Toast.makeText(this, "Đăng nhập thất bại", Toast.LENGTH_SHORT).show();
+                else {
+                    Toast.makeText(this, "Đăng nhập thất bại", Toast.LENGTH_SHORT).show();
+                }
                 }
 
             }
@@ -196,7 +197,7 @@ public class MainActivity extends AppCompatActivity {
             }
         }
         if (users.size() == 0) {
-            User admin = new User("codedoan", "codedoan", "codedoan.com", 0);
+            User admin = new User("admin", "admin", "Administrator", 0);
             userDAO.insert(admin);
         }
     }

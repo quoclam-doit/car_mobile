@@ -12,7 +12,7 @@ import androidx.annotation.Nullable;
 import java.io.ByteArrayOutputStream;
 
 public class MyDbHelper extends SQLiteOpenHelper {
-    public static final String Name_db = "beeCar.db";
+    public static final String Name_db = "beeCarVip.db";
     public static final int Version_db =2 ;
 
 
