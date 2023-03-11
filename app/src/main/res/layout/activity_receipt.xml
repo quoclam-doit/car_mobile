@@ -382,9 +382,10 @@
                     android:id="@+id/btn_dat_xe"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-
-                    android:background="#FF5722"
+                    android:background="@drawable/bg_search_vehicles_co_lai"
                     android:text="Đặt xe"
+                    android:textSize="18dp"
+                    android:textStyle="bold"
                     android:textColor="@color/white" />
             </LinearLayout>
 

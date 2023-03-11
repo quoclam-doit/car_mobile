@@ -385,14 +385,14 @@
                     android:layout_height="wrap_content"
                     android:textSize="20dp"
                     android:textStyle="bold"
-                    android:textColor="#FF5722"
+                    android:textColor="#091970"
                     android:paddingVertical="10dp"
                     android:paddingLeft="15dp"
                     android:text="Chọn tài xế bạn muốn"/>
                 <View
                     android:layout_width="match_parent"
                     android:layout_height="2dp"
-                    android:background="#FF5722"
+                    android:background="#091970"
                     />
                 <Spinner
                     android:id="@+id/spin"
@@ -407,8 +407,9 @@
                     android:id="@+id/btn_dat_xe"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-
-                    android:background="#FF5722"
+                    android:textStyle="bold"
+                    android:textSize="18dp"
+                    android:background="@drawable/bg_search_vehicles_co_lai"
                     android:text="Đặt xe"
                     android:textColor="@color/white" />
 
