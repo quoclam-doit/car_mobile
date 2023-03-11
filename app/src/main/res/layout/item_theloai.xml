@@ -28,6 +28,7 @@
                 android:layout_marginLeft="20dp"
                 android:id="@+id/tv_number_category"
                 android:text="1"
+                android:textColor="#F000"
                 android:textSize="22dp" />
 
             <TextView
@@ -36,6 +37,7 @@
                 android:layout_margin="5dp"
                 android:layout_marginLeft="20dp"
                 android:text="Tên thể loại"
+                android:textColor="#f000"
                 android:id="@+id/tv_name_category"
                 android:textSize="22dp" />
 

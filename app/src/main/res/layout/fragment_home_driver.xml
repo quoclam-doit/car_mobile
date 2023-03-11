@@ -40,7 +40,7 @@
                 android:fontFamily="@font/fredoka_one"
                 android:paddingHorizontal="10dp"
                 android:text="Lịch trình của tôi"
-                android:textColor="#FF5722"
+                android:textColor="#091970"
                 android:textSize="20dp"
                 android:textStyle="bold" />
 
@@ -50,7 +50,7 @@
                 android:layout_height="1dp"
                 android:layout_marginHorizontal="10dp"
                 android:layout_marginTop="2dp"
-                android:background="#FF5722" />
+                android:background="@drawable/bg_search_vehicles_co_lai" />
 
             <androidx.recyclerview.widget.RecyclerView
                 android:id="@+id/recy_schedule_today"

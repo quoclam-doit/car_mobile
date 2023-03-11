@@ -9,8 +9,8 @@
     <View
         android:layout_width="800dp"
         android:layout_height="800dp"
-        android:layout_marginLeft="160dp"
-        android:layout_marginBottom="130dp"
+        android:layout_marginLeft="120dp"
+        android:layout_marginBottom="120dp"
         android:background="@drawable/bg_lg_view"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -35,8 +35,6 @@
             android:layout_height="wrap_content"
             android:textColor="@color/white"
             android:textSize="35dp"
-            android:fontFamily="@font/fredoka_one"
-
             android:layout_marginTop="160dp"
             android:paddingLeft="35dp"
             android:textStyle="bold"
@@ -63,7 +61,7 @@
             android:drawablePadding="5dp"
             android:paddingLeft="10dp"
             android:inputType="textPersonName"
-            android:hint="tên đăng nhập" />
+            android:hint="Tên đăng nhập" />
 
         <EditText
             android:id="@+id/ed_password_lg"
@@ -80,7 +78,7 @@
             android:textSize="20dp"
             android:layout_marginHorizontal="35dp"
             android:inputType="textPassword"
-            android:hint="mật khẩu" />
+            android:hint="Mật khẩu" />
 
         <Button
             android:id="@+id/btn_login"
@@ -89,10 +87,10 @@
             android:layout_height="wrap_content"
             android:background="@drawable/bg_ed_lg"
             android:textColor="@color/white"
+            android:textSize="18dp"
             android:layout_marginTop="30dp"
             android:textStyle="bold"
             android:gravity="center"
-
             android:text="login" />
 
 <TextView
@@ -101,7 +99,8 @@
     android:layout_height="wrap_content"
     android:layout_gravity="center"
     android:text="Đăng ký tài khoản?"
-    android:layout_marginTop="20dp"
+    android:textSize="16dp"
+    android:layout_marginTop="18dp"
     android:textColor="@color/white"/>
     </LinearLayout>
 

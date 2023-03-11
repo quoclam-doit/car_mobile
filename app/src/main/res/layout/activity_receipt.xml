@@ -15,7 +15,7 @@
             android:id="@+id/tool_bar"
             android:layout_width="match_parent"
             android:layout_height="50dp"
-            android:background="#FF5722"
+            android:background="@drawable/bg_huy_don"
             app:titleTextColor="@color/white"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
@@ -53,11 +53,9 @@
 
                         <TextView
                             android:id="@+id/ten_xe"
-
-                                android:textColor="#FF5722"
+                            android:textColor="#091970"
                             android:layout_width="250dp"
                             android:layout_height="wrap_content"
-
                             android:textSize="24dp"
                             android:textStyle="bold"
                             android:paddingLeft="15dp"
@@ -126,7 +124,7 @@
                             >
 
                             <TextView
-                                android:textColor="#FF5722"
+                                android:textColor="#091970"
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
                                 android:paddingVertical="10dp"
@@ -136,7 +134,7 @@
                                 android:textStyle="bold" />
 
                             <View
-                                android:background="#FF5722"
+                                android:background="#0061ff"
                                 android:layout_width="match_parent"
                                 android:layout_height="2dp"
 
@@ -244,7 +242,7 @@
                     >
 
                     <TextView
-                        android:textColor="#FF5722"
+                        android:textColor="#091970"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:paddingVertical="10dp"
@@ -253,7 +251,7 @@
                         android:textSize="20dp"
                         android:textStyle="bold" />
                     <View
-                        android:background="#FF5722"
+                        android:background="#0061ff"
                         android:layout_width="match_parent"
                         android:layout_height="2dp"
 
@@ -384,9 +382,10 @@
                     android:id="@+id/btn_dat_xe"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-
-                    android:background="#FF5722"
+                    android:background="@drawable/bg_search_vehicles_co_lai"
                     android:text="Đặt xe"
+                    android:textSize="18dp"
+                    android:textStyle="bold"
                     android:textColor="@color/white" />
             </LinearLayout>
 

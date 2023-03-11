@@ -3,7 +3,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#FAF0E6"
+    android:background="@color/white"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     tools:context=".Fragment.QuanLyHoaDonFragment">
     <LinearLayout
@@ -11,26 +11,22 @@
         android:layout_height="wrap_content"
         android:orientation="vertical"
         >
+
         <TextView
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Danh sách quản lý hóa đơn"
-            android:textSize="25dp"
-            android:textStyle="bold"
+            android:layout_height="54dp"
             android:layout_marginTop="10dp"
+            android:background="@drawable/custom_hotro1"
             android:gravity="center"
-            android:textColor="#FFA07A"
-            >
-
-        </TextView>
+            android:text="Danh sách quản lý hóa đơn"
+            android:textColor="@color/white"
+            android:textSize="25dp"
+            android:textStyle="bold"></TextView>
         <androidx.recyclerview.widget.RecyclerView
             android:id="@+id/rcvHoaDon"
             android:layout_marginTop="10dp"
-            android:background="#FAF0E6"
+            android:background="@color/white"
             android:layout_width="match_parent"
             android:layout_height="match_parent"/>
     </LinearLayout>
-
-
-
 </androidx.constraintlayout.widget.ConstraintLayout>

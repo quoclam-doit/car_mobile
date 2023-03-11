@@ -22,7 +22,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:id="@+id/toolbarDrive"
-                android:background="@color/menuDriver"
+                android:background="@drawable/bg_huy_don"
                 android:minHeight="?attr/actionBarSize"
                 />
         </com.google.android.material.appbar.AppBarLayout>

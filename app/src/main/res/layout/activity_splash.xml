@@ -7,7 +7,7 @@
     android:background="@drawable/background_full_screen"
     tools:context=".SplashActivity">
 
-    
+
 
     <com.romainpiel.shimmer.ShimmerTextView
         android:id="@+id/tv_title_lg"
@@ -16,7 +16,7 @@
         android:text="Bee Car"
         android:textColor="@color/white"
         android:textSize="50dp"
-        app:reflectionColor="#FA6434"
+        app:reflectionColor="#091970"
 
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"

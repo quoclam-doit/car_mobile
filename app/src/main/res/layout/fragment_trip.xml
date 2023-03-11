@@ -11,13 +11,13 @@
        android:layout_height="match_parent">
       <TextView
           android:layout_width="match_parent"
-          android:layout_height="60dp"
+          android:layout_height="50dp"
           android:textSize="25dp"
           android:textColor="@color/white"
           android:textStyle="bold"
           android:gravity="center"
-          android:background="#FA6233"
-         android:text="CHUYẾN CỦA TÔI"/>
+          android:background="@drawable/custom_hotro1"
+          android:text="CHUYẾN CỦA TÔI"/>
       <androidx.recyclerview.widget.RecyclerView
           android:id="@+id/recy_trip"
           android:paddingHorizontal="10dp"
