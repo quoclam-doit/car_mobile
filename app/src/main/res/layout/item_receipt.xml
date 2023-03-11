@@ -9,11 +9,11 @@
     android:padding="10dp">
 
     <LinearLayout
-        android:layout_width="320dp"
+        android:layout_width="390dp"
         android:layout_height="wrap_content"
         android:background="@drawable/bg_btn_thue"
         android:orientation="horizontal"
-        android:padding="5dp">
+        android:padding="10dp">
 
         <ImageView
             android:layout_width="100dp"
@@ -61,7 +61,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginRight="10dp"
-                android:text="Trang thái:" />
+                android:text="Trạng thái:" />
 
 
             <TextView
@@ -69,7 +69,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginRight="10dp"
-                android:text="Tổng:" />
+                android:text="Tổng đơn:" />
 
 
         </LinearLayout>
