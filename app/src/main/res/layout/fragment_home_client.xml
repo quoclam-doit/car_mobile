@@ -61,13 +61,12 @@
                 android:layout_height="wrap_content"/>
 
 
-
             <LinearLayout
-                android:gravity="left"
-                android:paddingLeft="20dp"
                 android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="left"
                 android:orientation="horizontal"
-                android:layout_height="wrap_content">
+                android:paddingLeft="40dp">
 
                 <LinearLayout
                     android:id="@+id/layout_tu_lai"
@@ -83,7 +82,7 @@
                     <ImageView
                         android:layout_width="80dp"
                         android:layout_height="80dp"
-                        android:src="@drawable/car_" />
+                        android:src="@drawable/iconcarblue" />
 
                     <TextView
 
@@ -109,7 +108,7 @@
                     <ImageView
                         android:layout_width="80dp"
                         android:layout_height="80dp"
-                        android:src="@drawable/car_driver" />
+                        android:src="@drawable/iconmanwithcar" />
 
                     <TextView
                         android:layout_width="wrap_content"
