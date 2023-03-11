@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "626050192354",
+    "firebase_url": "https://beecarvip-default-rtdb.firebaseio.com",
+    "project_id": "beecarvip",
+    "storage_bucket": "beecarvip.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:626050192354:android:9cbe52fded0773a08f1fbb",
+        "android_client_info": {
+          "package_name": "com.example.beecar"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "626050192354-2t4jkk6nn1b67lo0hmlb0b5v21j22um4.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.beecar",
+            "certificate_hash": "518d959c5bf48e5cf9c8708c28bbd7290c5a6455"
+          }
+        },
+        {
+          "client_id": "626050192354-v8bus3u536ln1hs4ljseingdpc8p3798.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCXZ91V-B-uoVaC8wbsdvhLXRG6z0_YTNY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "626050192354-v8bus3u536ln1hs4ljseingdpc8p3798.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

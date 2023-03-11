@@ -22,8 +22,11 @@ import com.example.beecar.Database.MyDbHelper;
 import com.example.beecar.Model.Category;
 import com.example.beecar.Model.User;
 import com.example.beecar.Model.Vehicles;
+import com.google.firebase.database.DatabaseReference;
+import com.google.firebase.database.FirebaseDatabase;
 
 import java.util.ArrayList;
+import java.util.List;
 
 public class MainActivity extends AppCompatActivity {
 //    MyDbHelper myDbHelper;
@@ -35,13 +38,36 @@ public class MainActivity extends AppCompatActivity {
     Button btnLogin;
     LoadingDialog dialog;
 
-
+    private FirebaseDatabase db;
+    private DatabaseReference ref;
 
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        List<User> users = new ArrayList<>();
+        db = FirebaseDatabase.getInstance();
+        ref = db.getReference();
+        User user1 = new User("lyquoclam", "huhu", "haha", 0);
+        User user2 = new User("lyquoclam", "huhu", "Lý Quốc Lâm", 0);
+        User user3 = new User("lyquoclam1", "huhu", "Lý Quốc Lâm", 0);
+        User user4 = new User("vothanhduy", "huhu", "Võ Thanh Duy", 0);
+
+
+
+        users.add(user1);
+        users.add(user3);
+        users.add(user4);
+
+//        ref.child("data").child("-NQFtRLmK8KW0KTq-0yV").removeValue();
+ //       ref.child("api2").child("users2").child("-NQFypuTwhVJnFCA7ak1").removeValue();
+
+//        ref.child("data").push().setValue(user1);
+//        ref.child("api").child("users").push().setValue(user3);
+//        ref.child("data").push().setValue(user4);
+        ref.child("api").child("users").child("-NQFxlAwP925eCIIy-BQ").setValue(user4);
+
         admin();
         addcategory();
         tvRegister = findViewById(R.id.tv_register);
