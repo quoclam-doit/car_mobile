@@ -34,7 +34,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginRight="10dp"
-                android:text="Mã KH:" />
+                android:text="Mã khách hàng:" />
 
             <TextView
                 android:id="@+id/tv_dia_diem_rec"

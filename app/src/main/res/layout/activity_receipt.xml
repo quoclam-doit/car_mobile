@@ -38,6 +38,7 @@
                     android:layout_height="200dp"
                     android:scaleType="fitXY"
                     android:src="@drawable/img_2" />
+
                 <LinearLayout
                     android:orientation="vertical"
                     android:layout_width="match_parent"
@@ -56,6 +57,7 @@
                             android:textColor="#091970"
                             android:layout_width="250dp"
                             android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
                             android:textSize="24dp"
                             android:textStyle="bold"
                             android:paddingLeft="15dp"
@@ -67,6 +69,7 @@
                             android:layout_height="wrap_content"
                             android:textSize="15dp"
                             android:textStyle="bold"
+                            android:layout_marginTop="10dp"
                             android:paddingLeft="15dp"
                             android:layout_gravity="center"
                             android:text="8000/ngày" />
@@ -270,7 +273,7 @@
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:layout_marginRight="15dp"
-                                android:text="Name kh:"/>
+                                android:text="Tên khánh hàng:"/>
                             <TextView
                                 android:id="@+id/tv_full_name_client"
                                 android:layout_width="wrap_content"

@@ -44,7 +44,7 @@
             android:drawableStart="@drawable/ic_baseline_location_on_24"
             android:drawablePadding="5dp"
             android:ems="10"
-            android:hint="địa điểm nhận xe"
+            android:hint="Địa chỉ nhận xe"
             android:inputType="textPersonName" />
 
         <TextView
@@ -120,7 +120,7 @@
             android:background="@drawable/btn_bg_search_vehicles_co_lai"
             android:text="Tìm xe"
             android:textStyle="bold"
-            android:textSize="15dp"
+            android:textSize="18dp"
             android:textColor="@color/white"/>
 
         <androidx.recyclerview.widget.RecyclerView

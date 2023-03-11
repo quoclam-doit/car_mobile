@@ -137,7 +137,7 @@ public class RegisterClientActivity extends AppCompatActivity {
                     objC.setFull_name(u.getFull_name());
                     objC.setUser_id(u.getId());
                     if (clientDAO.insert(objC)){
-                        Toast.makeText(this, "Them thanh cong", Toast.LENGTH_SHORT).show();
+                        Toast.makeText(this, "Thêm thành công", Toast.LENGTH_SHORT).show();
                         Log.e("SIZE", clientDAO.selectAll().size()+"");
                         startActivity(new Intent(this,MainActivity.class));
 
