@@ -115,9 +115,8 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="right"
-                    android:layout_marginRight="10dp"
+                    android:layout_marginRight="25dp"
                     android:text="Xác nhận đơn"
-
                     android:textColor="#4CAF50"
                     android:textSize="20dp"
                     android:textStyle="bold" />
