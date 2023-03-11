@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/background_full_screen"
+    android:background="@drawable/bg_huy_don"
     tools:context=".RegisterDriverActivity">
 
     <androidx.appcompat.widget.Toolbar
@@ -25,12 +25,10 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
-                android:fontFamily="@font/fredoka_one"
                 android:paddingLeft="25dp"
                 android:text="Đăng ký"
                 android:textColor="@color/white"
-                android:textSize="25dp"
-
+                android:textSize="35dp"
                 android:textStyle="bold"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
@@ -173,7 +171,7 @@
                     android:layout_marginTop="20dp"
                     android:background="@drawable/bg_btn_register_driver"
                     android:text="Đăng ký"
-                    android:textColor="#FF5722"
+                    android:textColor="#0061ff"
                     android:textStyle="bold" />
 
 

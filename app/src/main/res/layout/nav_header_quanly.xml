@@ -15,14 +15,14 @@
         android:layout_height="wrap_content"
         android:textSize="20dp"
         android:layout_marginTop="5dp"
-        android:textColor="#5E3501"
+        android:textColor="#10100F"
         android:text="Admin"
         android:textStyle="bold"
         />
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Account: adminquanly"
+        android:text="Account: Admin"
         android:textSize="15dp"
         android:layout_marginTop="5dp"
         android:textColor="@color/black"

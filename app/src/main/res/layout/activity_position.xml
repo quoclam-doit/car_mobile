@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/background_full_screen"
+    android:background="@drawable/bg_background"
     tools:context=".PositionActivity">
 
     <androidx.appcompat.widget.Toolbar
@@ -27,8 +27,6 @@
         android:text="Chọn loại hình"
         android:textColor="@color/white"
         android:textSize="25dp"
-        android:fontFamily="@font/fredoka_one"
-
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -110,7 +108,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
-                android:text="tài xế"
+                android:text="Tài xế"
                 android:textColor="@color/white"
                 android:textSize="18dp"
                 android:textStyle="bold" />

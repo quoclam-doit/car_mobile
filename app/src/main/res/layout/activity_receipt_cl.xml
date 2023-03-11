@@ -15,7 +15,7 @@
             android:id="@+id/tool_bar_cl"
             android:layout_width="match_parent"
             android:layout_height="50dp"
-            android:background="#FF5722"
+            android:background="@drawable/bg_huy_don"
             app:titleTextColor="@color/white"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
@@ -53,10 +53,9 @@
 
                         <TextView
                             android:id="@+id/ten_xe_cl"
-                            android:textColor="#FF5722"
+                            android:textColor="#091970"
                             android:layout_width="250dp"
                             android:layout_height="wrap_content"
-
                             android:textSize="24dp"
                             android:textStyle="bold"
                             android:paddingLeft="0dp"
@@ -125,7 +124,7 @@
                     android:layout_marginVertical="1dp"
                     >
                     <TextView
-                        android:textColor="#FF5722"
+                        android:textColor="#091970"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:textSize="20dp"
@@ -136,7 +135,7 @@
                     <View
                         android:layout_width="match_parent"
                         android:layout_height="1dp"
-                        android:background="#FF5722"
+                        android:background="#0061ff"
                         />
                     <LinearLayout
                         android:layout_width="match_parent"
@@ -243,7 +242,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:textSize="20dp"
-                        android:textColor="#FF5722"
+                        android:textColor="#091970"
                         android:textStyle="bold"
                         android:paddingVertical="10dp"
                         android:paddingLeft="15dp"
@@ -251,7 +250,7 @@
                     <View
                         android:layout_width="match_parent"
                         android:layout_height="2dp"
-                        android:background="#FF5722"
+                        android:background="#0061ff"
                         />
                     <LinearLayout
                         android:layout_width="match_parent"

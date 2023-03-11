@@ -35,9 +35,6 @@ public class MainActivity extends AppCompatActivity {
     Button btnLogin;
     LoadingDialog dialog;
 
-
-
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -196,7 +193,7 @@ public class MainActivity extends AppCompatActivity {
             }
         }
         if (users.size() == 0) {
-            User admin = new User("codedoan", "codedoan", "codedoan.com", 0);
+            User admin = new User("admin", "admin", "admin.com", 0);
             userDAO.insert(admin);
         }
     }

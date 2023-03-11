@@ -26,16 +26,16 @@
                 android:layout_height="wrap_content"
                 android:text="Location :"
 
-                android:textColor="#FA764D" />
+                android:textColor="#091970" />
 
             <TextView
                 android:id="@+id/tv_dia_diem_don"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:textStyle="bold"
-                android:textColor="#FF5722"
                 android:layout_marginLeft="10dp"
-                android:text=" Nội bài" />
+                android:text=" Nội bài"
+                android:textColor="#F000"
+                android:textStyle="bold" />
 
         </LinearLayout>
 
@@ -46,20 +46,20 @@
             android:layout_height="wrap_content">
 
             <TextView
-                android:textColor="#FA764D"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:text="Name Client:"
 
-                android:text="Name Client:" />
+                android:textColor="#091970" />
 
             <TextView
                 android:id="@+id/tv_name_khach"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:textStyle="bold"
-                android:textColor="#FF5722"
                 android:layout_marginLeft="10dp"
-                android:text="03/12/2003" />
+                android:text="03/12/2003"
+                android:textColor="#F000"
+                android:textStyle="bold" />
 
         </LinearLayout>
 
@@ -69,20 +69,20 @@
             android:layout_height="wrap_content">
 
             <TextView
-                android:textColor="#FA764D"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:text="Start Time:"
 
-                android:text="Start Time:" />
+                android:textColor="#091970" />
 
             <TextView
                 android:id="@+id/tv_day_di"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:textStyle="bold"
-                android:textColor="#FF5722"
                 android:layout_marginLeft="10dp"
-                android:text="03/12/2003" />
+                android:text="03/12/2003"
+                android:textColor="#F000"
+                android:textStyle="bold" />
 
         </LinearLayout>
 
@@ -95,17 +95,17 @@
 
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:textColor="#FA764D"
-                android:text="End Time:" />
+                android:text="End Time:"
+                android:textColor="#091970" />
 
             <TextView
                 android:id="@+id/tv_day_ketthuc"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:textStyle="bold"
-                android:textColor="#FF5722"
                 android:layout_marginLeft="10dp"
-                android:text="03/12/2003" />
+                android:text="03/12/2003"
+                android:textColor="#F000"
+                android:textStyle="bold" />
 
         </LinearLayout>
 
