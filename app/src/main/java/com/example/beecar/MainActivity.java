@@ -193,7 +193,7 @@ public class MainActivity extends AppCompatActivity {
             }
         }
         if (users.size() == 0) {
-            User admin = new User("admin", "admin", "admin.com", 0);
+            User admin = new User("codedoan", "codedoan", "codedoan.com", 0);
             userDAO.insert(admin);
         }
     }
