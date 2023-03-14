@@ -94,9 +94,9 @@ public class ReceiptActivity extends AppCompatActivity {
         Bitmap bitmap = BitmapFactory.decodeByteArray(vehicles.getImage(),0,vehicles.getImage().length);
         imgXe.setImageBitmap(bitmap);
         tvNameXe.setText(vehicles.getName_car());
-        tvPriceDay.setText(vehicles.getPrice_date()+"");
+        tvPriceDay.setText(vehicles.getPrice_date()+" /VNĐ ngày");
         tvDayBd.setText(vehicles.getDay_bd());
-        tvChuyen.setText(vehicles.getCount_muon()+"");
+        tvChuyen.setText(vehicles.getCount_muon()+" /chuyến");
         tvIdXe.setText(vehicles.getId()+"");
         tvBien.setText(vehicles.getBien_ks());
         tvDayDk.setText(vehicles.getDay_dk());
@@ -105,8 +105,8 @@ public class ReceiptActivity extends AppCompatActivity {
         tvDayOder.setText(obj.getOder_time());
         tvDayStart.setText(obj.getStart_time());
         tvDayEnd.setText(obj.getEnd_time());
-        tvDonGia.setText(vehicles.getPrice_date()+"/ngày");
-        tvTotal.setText(obj.getTotal()+"");
+        tvDonGia.setText(vehicles.getPrice_date()+" /VNĐ ngày");
+        tvTotal.setText(obj.getTotal()+" VNĐ");
 
 //        if (vehicles.getVehicles_status()==2){
 //            tvStatusXe.setText("Chưa có người thuê");
@@ -141,7 +141,7 @@ public class ReceiptActivity extends AppCompatActivity {
                 finish();
                 return;
             }else{
-                Toast.makeText(this, "Dat don khong thanh cong", Toast.LENGTH_SHORT).show();
+                Toast.makeText(this, "Đặt đơn không thành công", Toast.LENGTH_SHORT).show();
                 return;
             }
 

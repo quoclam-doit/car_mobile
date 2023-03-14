@@ -29,8 +29,8 @@ import java.util.List;
 public class RegisterDriverActivity extends AppCompatActivity {
     Toolbar toolbar ;
 
-    EditText lastName , firtName , userNameDriver , passNameDriver ;
-    TextView errorlastName , errorfirtName , erroreruserName , errorPass ;
+    EditText lastName , firtName , userNameDriver , passNameDriver, emailDriver, phoneDriver ;
+    TextView errorlastName , errorfirtName , erroreruserName , errorPass, errorEmail, errorPhone ;
     Button btnDriver;
     ImageView img_gplx;
 
@@ -52,11 +52,16 @@ public class RegisterDriverActivity extends AppCompatActivity {
         firtName = findViewById(R.id.ed_first_name);
         userNameDriver = findViewById(R.id.ed_user_name_register_driver);
         passNameDriver = findViewById(R.id.ed_password_register_driver);
+//        emailDriver = findViewById(R.id.ed_email_register_driver);
+//        phoneDriver = findViewById(R.id.ed_phone_register_driver);
+
 
         errorlastName = findViewById(R.id.error_last_name);
         errorfirtName = findViewById(R.id.error_first_name);
         erroreruserName = findViewById(R.id.error_user_name);
         errorPass = findViewById(R.id.error_password);
+//        errorEmail = findViewById(R.id.error_email);
+//        errorPhone = findViewById(R.id.error_phone);
         img_gplx = findViewById(R.id.image_gplx);
 
         btnDriver = findViewById(R.id.btn_register_driver);
