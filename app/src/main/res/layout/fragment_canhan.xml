@@ -68,29 +68,33 @@
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginTop="10dp"
-                    android:orientation="vertical">
+
+                    android:orientation="vertical"
+                    android:gravity="center_vertical"
+                    android:layout_gravity="center"
+                    >
 
                     <TextView
                         android:textColor="#091970"
                         android:paddingLeft="10dp"
-                        android:gravity="center_vertical"
+
                         android:layout_width="match_parent"
                         android:layout_height="30dp"
+
 
                         android:layout_marginLeft="20dp"
                         android:text="Tài khoản"
                         android:textStyle="bold"
                         android:textSize="22dp" />
 
-                    <TextView
-                        android:paddingLeft="10dp"
-                        android:layout_width="match_parent"
-                        android:layout_height="30dp"
-                        android:gravity="center_vertical"
-                        android:layout_marginLeft="20dp"
-                        android:text="Quản lí thông tin cá nhân"
-                        android:textSize="17dp" />
+<!--                    <TextView-->
+<!--                        android:paddingLeft="10dp"-->
+<!--                        android:layout_width="match_parent"-->
+<!--                        android:layout_height="30dp"-->
+<!--                        android:gravity="center_vertical"-->
+<!--                        android:layout_marginLeft="20dp"-->
+<!--                        android:text="Quản lí thông tin cá nhân"-->
+<!--                        android:textSize="17dp" />-->
                 </LinearLayout>
             </LinearLayout>
             <View
@@ -123,8 +127,10 @@
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginTop="10dp"
-                    android:orientation="vertical">
+
+                    android:orientation="vertical"
+                    android:gravity="center_vertical"
+                    android:layout_gravity="center">
 
                     <TextView
                         android:textColor="#091970"
@@ -138,15 +144,15 @@
                         android:textStyle="bold"
                         android:textSize="22dp" />
 
-                    <TextView
-                        android:paddingLeft="10dp"
-                        android:layout_width="match_parent"
-                        android:layout_height="30dp"
-                        android:gravity="center_vertical"
+<!--                    <TextView-->
+<!--                        android:paddingLeft="10dp"-->
+<!--                        android:layout_width="match_parent"-->
+<!--                        android:layout_height="30dp"-->
+<!--                        android:gravity="center_vertical"-->
 
-                        android:layout_marginLeft="20dp"
-                        android:text="Quản lí thông tin cá nhân"
-                        android:textSize="17dp" />
+<!--                        android:layout_marginLeft="20dp"-->
+<!--                        android:text="Quản lí thông tin cá nhân"-->
+<!--                        android:textSize="17dp" />-->
                 </LinearLayout>
             </LinearLayout>
             <View
@@ -173,7 +179,8 @@
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginTop="10dp"
+                    android:gravity="center_vertical"
+                    android:layout_gravity="center"
                     android:orientation="vertical">
 
                     <TextView
@@ -188,15 +195,15 @@
                         android:textStyle="bold"
                         android:textSize="22dp" />
 
-                    <TextView
-                        android:paddingLeft="10dp"
-                        android:layout_width="match_parent"
-                        android:layout_height="30dp"
-                        android:gravity="center_vertical"
+<!--                    <TextView-->
+<!--                        android:paddingLeft="10dp"-->
+<!--                        android:layout_width="match_parent"-->
+<!--                        android:layout_height="30dp"-->
+<!--                        android:gravity="center_vertical"-->
 
-                        android:layout_marginLeft="20dp"
-                        android:text="Quản lí thông tin cá nhân"
-                        android:textSize="17dp" />
+<!--                        android:layout_marginLeft="20dp"-->
+<!--                        android:text="Quản lí thông tin cá nhân"-->
+<!--                        android:textSize="17dp" />-->
                 </LinearLayout>
             </LinearLayout>
             <View
@@ -222,7 +229,8 @@
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginTop="10dp"
+                    android:gravity="center_vertical"
+                    android:layout_gravity="center"
                     android:orientation="vertical">
 
                     <TextView
@@ -236,15 +244,15 @@
                         android:textStyle="bold"
                         android:gravity="center_vertical"/>
 
-                    <TextView
-                        android:layout_width="match_parent"
-                        android:layout_height="30dp"
+<!--                    <TextView-->
+<!--                        android:layout_width="match_parent"-->
+<!--                        android:layout_height="30dp"-->
 
-                        android:layout_marginLeft="20dp"
-                        android:text="Quản lí địa chỉ giao xe tận nơi"
-                        android:textSize="17dp"
-                        android:gravity="center_vertical"
-                        android:paddingLeft="10dp"/>
+<!--                        android:layout_marginLeft="20dp"-->
+<!--                        android:text="Quản lí địa chỉ giao xe tận nơi"-->
+<!--                        android:textSize="17dp"-->
+<!--                        android:gravity="center_vertical"-->
+<!--                        android:paddingLeft="10dp"/>-->
                 </LinearLayout>
             </LinearLayout>
             <View
@@ -372,7 +380,7 @@
                     android:gravity="center_vertical"
                     android:textStyle="bold"
                     android:textColor="#091970"
-                    android:paddingLeft="10dp"/>
+                    android:paddingLeft="25dp"/>
 
             </LinearLayout>
             <View

@@ -12,7 +12,8 @@
         android:background="@drawable/custom_hotro1"
         android:gravity="center"
         android:padding="10dp"
-        android:text="Thêm thông tin xe"
+        android:text="Thêm Thông Tin Xe"
+        android:textStyle="bold"
         android:textColor="@color/white"
         android:textSize="23dp" />
 
@@ -35,7 +36,8 @@
             android:layout_height="wrap_content"
             android:layout_marginLeft="20dp"
             android:text="Tên xe"
-            android:textColor="#616467"
+            android:textStyle="bold"
+            android:textColor="#091970"
             android:textSize="20dp"
             />
 
@@ -68,7 +70,8 @@
             android:layout_height="wrap_content"
             android:layout_marginLeft="20dp"
             android:text="Biển số"
-            android:textColor="#616467"
+            android:textStyle="bold"
+            android:textColor="#091970"
             android:textSize="20dp"
             />
 
@@ -101,7 +104,8 @@
             android:layout_height="wrap_content"
             android:layout_marginLeft="20dp"
             android:text="Giá theo ngày"
-            android:textColor="#616467"
+            android:textStyle="bold"
+            android:textColor="#091970"
             android:textSize="20dp" />
 
         <TextView
@@ -132,7 +136,8 @@
             android:layout_height="wrap_content"
             android:layout_marginLeft="20dp"
             android:text="Giá theo giờ"
-            android:textColor="#616467"
+            android:textStyle="bold"
+            android:textColor="#091970"
             android:textSize="20dp"
             />
 
@@ -164,7 +169,8 @@
             android:layout_height="wrap_content"
             android:layout_marginLeft="20dp"
             android:text="Ngày đăng kiểm"
-            android:textColor="#616467"
+            android:textStyle="bold"
+            android:textColor="#091970"
             android:textSize="20dp"
 
             />
@@ -198,7 +204,8 @@
             android:layout_height="wrap_content"
             android:layout_marginLeft="20dp"
             android:text="Ngày bảo dưỡng"
-            android:textColor="#616467"
+            android:textStyle="bold"
+            android:textColor="#091970"
             android:textSize="20dp"
 
             />
@@ -229,6 +236,8 @@
         android:layout_marginTop="5dp"
         android:background="@drawable/custom_hotro1"
         android:text="Thêm xe"
+        android:textStyle="bold"
+        android:textSize="18dp"
         android:textColor="@color/white"/>
 
 </LinearLayout>

@@ -29,7 +29,7 @@ public class MyDbHelper extends SQLiteOpenHelper {
         sqLiteDatabase.execSQL(tb_vehicles);
 
         // user
-        String tb_user = "create table if not exists  tb_user (id integer primary key autoincrement, user_name string,password string,full_name string,position int)";
+        String tb_user = "create table if not exists  tb_user (id integer primary key autoincrement, user_name string,password string, email string, phone string, full_name string,position int)";
         sqLiteDatabase.execSQL(tb_user);
         String tb_driver = "create table if not exists  tb_driver (id integer primary key autoincrement, user_name string,password string,full_name string,image_gplx blog,luongcb int,status_driver int , user_id references tb_user(id))";
         sqLiteDatabase.execSQL(tb_driver);

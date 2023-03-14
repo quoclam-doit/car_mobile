@@ -61,60 +61,62 @@
                 android:layout_height="wrap_content"/>
 
 
-
             <LinearLayout
-                android:gravity="left"
-                android:paddingLeft="20dp"
                 android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="left"
                 android:orientation="horizontal"
-                android:layout_height="wrap_content">
+                android:paddingLeft="40dp">
+
                 <LinearLayout
                     android:id="@+id/layout_tu_lai"
-                    android:padding="10dp"
+                    android:layout_width="119dp"
+                    android:layout_height="132dp"
                     android:layout_marginHorizontal="20dp"
                     android:background="@drawable/vien_background"
-                    android:layout_width="120dp"
-                    android:orientation="vertical"
                     android:gravity="center"
-                    android:layout_height="120dp">
+                    android:orientation="vertical"
+                    android:padding="10dp">
 
 
                     <ImageView
                         android:layout_width="80dp"
                         android:layout_height="80dp"
-                        android:src="@drawable/car_"/>
+                        android:src="@drawable/iconcarblue" />
+
                     <TextView
 
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:textSize="18dp"
-                        android:textStyle="bold"
+                        android:text="Tự lái"
                         android:textColor="#091970"
-                        android:text="Tự lái"/>
+                        android:textSize="18dp"
+                        android:textStyle="bold" />
                 </LinearLayout>
 
                 <LinearLayout
-                    android:padding="10dp"
-                    android:layout_width="120dp"
                     android:id="@+id/layout_co_lai"
+                    android:layout_width="136dp"
+                    android:layout_height="match_parent"
                     android:layout_marginHorizontal="20dp"
-                    android:orientation="vertical"
-                    android:gravity="center"
                     android:background="@drawable/vien_background"
-                    android:layout_height="120dp">
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:padding="10dp">
 
 
                     <ImageView
                         android:layout_width="80dp"
                         android:layout_height="80dp"
-                        android:src="@drawable/car_driver"/>
+                        android:src="@drawable/iconmanwithcar" />
+
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:textSize="18dp"
-                        android:textStyle="bold"
+                        android:text="Có lái"
                         android:textColor="#091970"
-                        android:text="Có lái"/>
+                        android:textSize="18dp"
+                        android:textStyle="bold" />
                 </LinearLayout>
             </LinearLayout>
         </LinearLayout>
