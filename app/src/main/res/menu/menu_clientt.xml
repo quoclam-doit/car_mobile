@@ -11,7 +11,7 @@
         android:icon="@drawable/ic_map2"
         />
     <item
-        android:title="Hỗ trợ"
+        android:title="Vị trí"
         android:id="@+id/htClient"
         android:icon="@drawable/ic_support2"
         />
