@@ -7,22 +7,35 @@ public class User implements Serializable {
     String user_name;
     String password;
     String full_name;
+    String email;
+    String phone;
     int position;
 
     public User() {
     }
 
-    public User(String user_name, String password, String full_name, int position) {
+    public User(String user_name, String password, String full_name, String email, String phone, int position) {
         this.user_name = user_name;
         this.password = password;
         this.full_name = full_name;
+        this.email = email;
+        this.phone = phone;
         this.position = position;
     }
+
+//    public User(String user_name, String password, String full_name, int position) {
+//        this.user_name = user_name;
+//        this.password = password;
+//        this.full_name = full_name;
+//        this.position = position;
+//    }
 
     public static final String TB_Name = "tb_user";
     public static final String COL_id = "id";
     public static final String COL_user_name = "user_name";
     public static final String COL_password = "password";
+    public static final String COL_email = "email";
+    public static final String COL_phone = "phone";
     public static final String COL_full_name = "full_name";
     public static final String COL_position = "position";
 
@@ -65,5 +78,21 @@ public class User implements Serializable {
 
     public void setPosition(int position) {
         this.position = position;
+    }
+
+    public String getEmail() {
+        return email;
+    }
+
+    public void setEmail(String email) {
+        this.email = email;
+    }
+
+    public String getPhone() {
+        return phone;
+    }
+
+    public void setPhone(String phone) {
+        this.phone = phone;
     }
 }

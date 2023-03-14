@@ -46,19 +46,19 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        List<User> users = new ArrayList<>();
-        db = FirebaseDatabase.getInstance();
-        ref = db.getReference();
-        User user1 = new User("lyquoclam", "huhu", "haha", 0);
-        User user2 = new User("lyquoclam", "huhu", "Lý Quốc Lâm", 0);
-        User user3 = new User("lyquoclam1", "huhu", "Lý Quốc Lâm", 0);
-        User user4 = new User("vothanhduy", "huhu", "Võ Thanh Duy", 0);
-
-
-
-        users.add(user1);
-        users.add(user3);
-        users.add(user4);
+//        List<User> users = new ArrayList<>();
+//        db = FirebaseDatabase.getInstance();
+//        ref = db.getReference();
+//        User user1 = new User("lyquoclam", "huhu", "haha", 0);
+//        User user2 = new User("lyquoclam", "huhu", "Lý Quốc Lâm", 0);
+//        User user3 = new User("lyquoclam1", "huhu", "Lý Quốc Lâm", 0);
+//        User user4 = new User("vothanhduy", "huhu", "Võ Thanh Duy", 0);
+//
+//
+//
+//        users.add(user1);
+//        users.add(user3);
+//        users.add(user4);
 
 //        ref.child("data").child("-NQFtRLmK8KW0KTq-0yV").removeValue();
  //       ref.child("api2").child("users2").child("-NQFypuTwhVJnFCA7ak1").removeValue();
@@ -66,7 +66,7 @@ public class MainActivity extends AppCompatActivity {
 //        ref.child("data").push().setValue(user1);
 //        ref.child("api").child("users").push().setValue(user3);
 //        ref.child("data").push().setValue(user4);
-        ref.child("api").child("users").child("-NQFxlAwP925eCIIy-BQ").setValue(user4);
+//        ref.child("api").child("users").child("-NQFxlAwP925eCIIy-BQ").setValue(user4);
 
         admin();
         addcategory();
@@ -127,67 +127,65 @@ public class MainActivity extends AppCompatActivity {
         String str_Password = ed_password.getText().toString().trim();
 
 
-            for (User obj : userDAO.selectAll()) {
-                if (obj.getUser_name().equalsIgnoreCase(str_UserName) && obj.getPassword().equalsIgnoreCase(str_Password)) {
-                    if (obj.getPosition() == 0) {
-                        Toast.makeText(this, "Đăng nhập thành công", Toast.LENGTH_SHORT).show();
-                        Intent i3 = new Intent(this, NavigationQuanLy.class);
-                        dialog.show();
-                        new Handler().postDelayed(new Runnable() {
-                            @Override
-                            public void run() {
-                                i3.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
-                                startActivity(i3);
+        for (User obj : userDAO.selectAll()) {
+            if (!obj.getUser_name().equalsIgnoreCase(str_UserName) || !obj.getPassword().equalsIgnoreCase(str_Password)) {
+                Toast.makeText(this, "Đăng nhập thành cặc", Toast.LENGTH_SHORT).show();
 
-                                dialog.dismiss();
-                            }
-                        }, 3000);
+            } else {
+                if (obj.getUser_name().equalsIgnoreCase(str_UserName) && obj.getPassword().equalsIgnoreCase(str_Password) && obj.getPosition() == 0) {
 
-                        return;
-                    }
-                    if (obj.getPosition() == 1) {
-                        Toast.makeText(this, "Đăng nhập thành công", Toast.LENGTH_SHORT).show();
-                        Intent ic = new Intent(this, HomeClient.class);
-                        ic.putExtra("obj", obj);
-                        dialog.show();
-                        new Handler().postDelayed(new Runnable() {
-                            @Override
-                            public void run() {
+                    Toast.makeText(this, "Đăng nhập thành công", Toast.LENGTH_SHORT).show();
+                    Intent i3 = new Intent(this, NavigationQuanLy.class);
+                    dialog.show();
+                    new Handler().postDelayed(new Runnable() {
+                        @Override
+                        public void run() {
+                            i3.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
+                            startActivity(i3);
 
-                                ic.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
-                                startActivity(ic);
-                                dialog.dismiss();
-                                finish();
+                            dialog.dismiss();
+                        }
+                    }, 3000);
 
-                            }
-                        }, 3000);
+                } else if (obj.getUser_name().equalsIgnoreCase(str_UserName) && obj.getPassword().equalsIgnoreCase(str_Password) && obj.getPosition() == 1) {
+
+                    Toast.makeText(this, "Đăng nhập thành công", Toast.LENGTH_SHORT).show();
+                    Intent ic = new Intent(this, HomeClient.class);
+                    ic.putExtra("obj", obj);
+                    dialog.show();
+                    new Handler().postDelayed(new Runnable() {
+                        @Override
+                        public void run() {
+
+                            ic.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
+                            startActivity(ic);
+                            dialog.dismiss();
+                            finish();
+
+                        }
+                    }, 3000);
+
+                } else if (obj.getUser_name().equalsIgnoreCase(str_UserName) && obj.getPassword().equalsIgnoreCase(str_Password) && obj.getPosition() == 2) {
+
+                    Toast.makeText(this, "Đăng nhập thành công", Toast.LENGTH_SHORT).show();
+                    Intent id = new Intent(this, NavigationDrawerForDriver.class);
+                    id.putExtra("obj", obj);
+                    dialog.show();
+                    new Handler().postDelayed(new Runnable() {
+                        @Override
+                        public void run() {
+
+                            id.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
+                            startActivity(id);
+                            dialog.dismiss();
+                        }
+                    }, 3000);
 
 
-                        return;
-                    }
-                    if (obj.getPosition() == 2) {
-                        Toast.makeText(this, "Đăng nhập thành công", Toast.LENGTH_SHORT).show();
-                        Intent id = new Intent(this, NavigationDrawerForDriver.class);
-                        id.putExtra("obj", obj);
-                        dialog.show();
-                        new Handler().postDelayed(new Runnable() {
-                            @Override
-                            public void run() {
-
-                                id.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
-                                startActivity(id);
-                                dialog.dismiss();
-                            }
-                        }, 3000);
-
-                        return;
-                    }
-                }
-                else {
-                    Toast.makeText(this, "Đăng nhập thất bại", Toast.LENGTH_SHORT).show();
-                }
                 }
 
+            }
+        }
             }
 
 
@@ -223,7 +221,7 @@ public class MainActivity extends AppCompatActivity {
             }
         }
         if (users.size() == 0) {
-            User admin = new User("admin", "admin", "Administrator", 0);
+            User admin = new User("admin", "admin", "Administrator", "admin@gmail.com", "0334416510", 0);
             userDAO.insert(admin);
         }
     }

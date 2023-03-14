@@ -29,8 +29,10 @@ public class UserDAO {
                 objU.setId(cursor.getInt(0));
                 objU.setUser_name(cursor.getString(1));
                 objU.setPassword(cursor.getString(2));
-                objU.setFull_name(cursor.getString(3));
-                objU.setPosition(cursor.getInt(4));
+                objU.setEmail(cursor.getString(3));
+                objU.setPhone(cursor.getString(4));
+                objU.setFull_name(cursor.getString(5));
+                objU.setPosition(cursor.getInt(6));
                 list.add(objU);
                 cursor.moveToNext();
             }
@@ -45,6 +47,8 @@ public class UserDAO {
         values.put(User.COL_user_name,objU.getUser_name());
         values.put(User.COL_password,objU.getPassword());
         values.put(User.COL_full_name,objU.getFull_name());
+        values.put(User.COL_email, objU.getEmail());
+        values.put(User.COL_phone, objU.getPhone());
         values.put(User.COL_position,objU.getPosition());
         long row = db.insert(User.TB_Name,null,values);
         return row>0;
@@ -54,6 +58,8 @@ public class UserDAO {
         ContentValues values = new ContentValues();
         values.put(User.COL_user_name,objU.getUser_name());
         values.put(User.COL_password,objU.getPassword());
+        values.put(User.COL_email, objU.getEmail());
+        values.put(User.COL_phone, objU.getPhone());
         values.put(User.COL_full_name,objU.getFull_name());
         values.put(User.COL_position,objU.getPosition());
         int row = db.update(User.TB_Name,values,"id=?", new String[]{objU.getId()+""});
