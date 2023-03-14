@@ -18,140 +18,191 @@
             app:layout_constraintVertical_bias="0.0" />
 
 
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:paddingLeft="25dp"
+        android:text="Đăng ký"
+        android:textColor="#0061ff"
+        android:textSize="35dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.023" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1.5dp"
+        android:layout_marginHorizontal="25dp"
+        android:background="#0061ff"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.098" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="112dp"
+        android:background="@drawable/bg_form_register_client"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+
+        <EditText
+            android:id="@+id/ed_last_name_client"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginHorizontal="20dp"
+            android:layout_marginTop="40dp"
+            android:background="@drawable/bg_ed_lg"
+            android:ems="10"
+            android:hint="Họ"
+            android:inputType="textPersonName"
+            android:paddingLeft="20dp"
+            android:textColor="@color/white"
+            android:textColorHint="#A6ffffff" />
+
         <TextView
+            android:id="@+id/error_last_name_client"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_marginHorizontal="30dp"
+
+            android:paddingLeft="15dp" />
+
+        <EditText
+            android:id="@+id/ed_first_name_client"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginHorizontal="20dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/bg_ed_lg"
+            android:ems="10"
+            android:hint="Tên"
+            android:inputType="textPersonName"
+            android:paddingLeft="20dp"
+            android:textColor="@color/white"
+            android:textColorHint="#A6ffffff" />
+
+        <TextView
+            android:id="@+id/error_first_name_client"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="30dp"
+
+            android:paddingLeft="15dp" />
+
+        <EditText
+            android:id="@+id/ed_user_name_register_client"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginHorizontal="20dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/bg_ed_lg"
+            android:ems="10"
+            android:hint="User name"
+            android:inputType="textPersonName"
+            android:paddingLeft="20dp"
+            android:textColor="@color/white"
+            android:textColorHint="#A6ffffff" />
+
+        <TextView
+            android:id="@+id/error_user_name_client"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="30dp"
+
+            android:paddingLeft="15dp" />
+
+        <EditText
+            android:id="@+id/ed_password_register_client"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginHorizontal="20dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/bg_ed_lg"
+            android:ems="10"
+            android:hint="Password"
+            android:inputType="textPassword"
+            android:paddingLeft="20dp"
+            android:textColor="@color/white"
+            android:textColorHint="#A6ffffff" />
+
+        <TextView
+            android:id="@+id/error_password_client"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="30dp"
+
+            android:paddingLeft="15dp" />
+
+        <EditText
+            android:id="@+id/ed_email_register_client"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginHorizontal="20dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/bg_ed_lg"
+            android:ems="10"
+            android:hint="Email"
+            android:inputType="textEmailAddress"
+            android:paddingLeft="20dp"
+            android:textColor="@color/white"
+            android:textColorHint="#A6ffffff" />
+
+        <TextView
+            android:id="@+id/error_email_client"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="30dp"
+
+            android:paddingLeft="15dp" />
+
+        <EditText
+            android:id="@+id/ed_phone_register_client"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginHorizontal="20dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/bg_ed_lg"
+            android:ems="10"
+            android:hint="Phone number"
+            android:inputType="number"
+            android:paddingLeft="20dp"
+            android:textColor="@color/white"
+            android:textColorHint="#A6ffffff" />
+
+        <TextView
+            android:id="@+id/error_phone_client"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="30dp"
+
+            android:paddingLeft="15dp" />
+
+        <Button
+            android:id="@+id/btn_register_client"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
             android:layout_gravity="center"
-            android:paddingLeft="25dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/bg_ed_lg"
             android:text="Đăng ký"
-            android:textColor="#0061ff"
-            android:textSize="35dp"
-            android:textStyle="bold"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.0"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.182" />
-
-        <View
-            android:layout_width="match_parent"
-            android:layout_height="1.5dp"
-            android:layout_marginHorizontal="25dp"
-            android:background="#0061ff"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.251" />
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_marginTop="224dp"
-            android:background="@drawable/bg_form_register_client"
-            android:orientation="vertical"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.0"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent">
+            android:textColor="#FFFFFF"
+            android:textSize="18dp"
+            android:textStyle="bold" />
 
 
-            <EditText
-                android:id="@+id/ed_last_name_client"
-                android:layout_width="match_parent"
-                android:layout_height="50dp"
-                android:ems="10"
-                android:inputType="textPersonName"
-                android:layout_marginTop="40dp"
-                android:textColor="@color/white"
-                android:textColorHint="#A6ffffff"
-                android:layout_marginHorizontal="20dp"
-                android:background="@drawable/bg_ed_lg"
-                android:paddingLeft="20dp"
-                android:hint="Họ" />
-            <TextView
-                android:id="@+id/error_last_name_client"
-                android:layout_width="match_parent"
-                android:layout_marginHorizontal="30dp"
-                android:paddingLeft="15dp"
-
-                android:layout_height="wrap_content"/>
-            <EditText
-                android:id="@+id/ed_first_name_client"
-                android:layout_width="match_parent"
-                android:layout_height="50dp"
-                android:ems="10"
-                android:layout_marginTop="10dp"
-                android:textColor="@color/white"
-                android:inputType="textPersonName"
-                android:layout_marginHorizontal="20dp"
-                android:textColorHint="#A6ffffff"
-                android:background="@drawable/bg_ed_lg"
-                android:paddingLeft="20dp"
-                android:hint="Tên" />
-            <TextView
-                android:id="@+id/error_first_name_client"
-                android:layout_width="match_parent"
-                android:layout_marginHorizontal="30dp"
-                android:paddingLeft="15dp"
-
-                android:layout_height="wrap_content"/>
-            <EditText
-                android:id="@+id/ed_user_name_register_client"
-                android:layout_width="match_parent"
-                android:layout_height="50dp"
-                android:ems="10"
-                android:layout_marginTop="10dp"
-                android:textColor="@color/white"
-                android:inputType="textPersonName"
-                android:textColorHint="#A6ffffff"
-                android:layout_marginHorizontal="20dp"
-                android:background="@drawable/bg_ed_lg"
-                android:paddingLeft="20dp"
-                android:hint="User name" />
-            <TextView
-                android:id="@+id/error_user_name_client"
-                android:layout_width="match_parent"
-                android:layout_marginHorizontal="30dp"
-                android:paddingLeft="15dp"
-
-                android:layout_height="wrap_content"/>
-            <EditText
-                android:id="@+id/ed_password_register_client"
-                android:layout_width="match_parent"
-                android:layout_height="50dp"
-                android:ems="10"
-                android:layout_marginTop="10dp"
-                android:inputType="textPassword"
-                android:textColor="@color/white"
-                android:textColorHint="#A6ffffff"
-                android:layout_marginHorizontal="20dp"
-                android:background="@drawable/bg_ed_lg"
-                android:paddingLeft="20dp"
-                android:hint="Password" />
-            <TextView
-                android:id="@+id/error_password_client"
-                android:layout_width="match_parent"
-                android:layout_marginHorizontal="30dp"
-                android:paddingLeft="15dp"
-
-                android:layout_height="wrap_content"/>
-
-            <Button
-                android:id="@+id/btn_register_client"
-                android:layout_width="150dp"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center"
-                android:layout_marginTop="20dp"
-                android:textStyle="bold"
-                android:background="@drawable/bg_ed_lg"
-                android:textColor="#FFFFFF"
-                android:textSize="18dp"
-                android:text="Đăng ký" />
-
-
-        </LinearLayout>
+    </LinearLayout>
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
