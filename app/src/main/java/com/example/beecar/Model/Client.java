@@ -11,6 +11,16 @@ public class Client implements Serializable {
     String phone;
     int user_id;
 
+    public Client(int id, String user_name, String password, String full_name, String email, String phone, int user_id) {
+        this.id = id;
+        this.user_name = user_name;
+        this.password = password;
+        this.full_name = full_name;
+        this.email = email;
+        this.phone = phone;
+        this.user_id = user_id;
+    }
+
     public Client() {
     }
 

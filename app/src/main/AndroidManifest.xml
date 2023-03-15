@@ -24,6 +24,7 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.BeeCar"
         tools:targetApi="31">
+<<<<<<< Updated upstream
 
         <!--
              TODO: Before you run your application, you need a Google Maps API key.
@@ -44,6 +45,14 @@
             android:exported="true"
             />
 
+=======
+        <activity android:name=".ThongTinCaNhan"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+>>>>>>> Stashed changes
         <activity
             android:name=".AccountManagerActivity"
             android:exported="false">

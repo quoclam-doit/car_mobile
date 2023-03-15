@@ -16,10 +16,12 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import com.example.beecar.DAO.CategoryDAO;
+import com.example.beecar.DAO.ClientDAO;
 import com.example.beecar.DAO.UserDAO;
 import com.example.beecar.DAO.VehiclesDAO;
 import com.example.beecar.Database.MyDbHelper;
 import com.example.beecar.Model.Category;
+import com.example.beecar.Model.Client;
 import com.example.beecar.Model.User;
 import com.example.beecar.Model.Vehicles;
 import com.google.firebase.database.DatabaseReference;
@@ -31,7 +33,7 @@ import java.util.List;
 public class MainActivity extends AppCompatActivity {
 //    MyDbHelper myDbHelper;
     UserDAO userDAO;
-
+    public Client cl;
     TextView tvRegister;
     EditText ed_userName;
     EditText ed_password;
@@ -121,11 +123,17 @@ public class MainActivity extends AppCompatActivity {
 
     private void loginApp() {
         userDAO = new UserDAO(this);
+//        ClientDAO clientDao = new ClientDAO(this);
         ed_userName = findViewById(R.id.ed_user_name_lg);
         ed_password = findViewById(R.id.ed_password_lg);
         String str_UserName = ed_userName.getText().toString().trim();
         String str_Password = ed_password.getText().toString().trim();
 
+//        for (Client client : clientDao.selectAll()){
+//            if(client.getUser_name().equalsIgnoreCase(str_UserName)){
+//                cl = new Client(client.getId(), client.getUser_name(), client.getFull_name(), client.getPassword(), client.getEmail(), client.getPassword(), client.getUser_id());
+//            }
+//        }
 
         for (User obj : userDAO.selectAll()) {
             if (!obj.getUser_name().equalsIgnoreCase(str_UserName) || !obj.getPassword().equalsIgnoreCase(str_Password)) {

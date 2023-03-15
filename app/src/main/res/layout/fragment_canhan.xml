@@ -75,6 +75,7 @@
                     >
 
                     <TextView
+
                         android:textColor="#091970"
                         android:paddingLeft="10dp"
 
