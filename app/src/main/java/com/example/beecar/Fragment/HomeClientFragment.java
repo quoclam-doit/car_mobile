@@ -1,5 +1,6 @@
 package com.example.beecar.Fragment;
 
+import android.app.Dialog;
 import android.content.Intent;
 import android.os.Bundle;
 
@@ -66,15 +67,25 @@ public class HomeClientFragment extends Fragment {
             startActivity(i);
         });
 
-        btn_co_lai.setOnClickListener(view -> {
-            Intent i1 = new Intent(getContext(), SearchVehiclesCoLai.class);
-            i1.putExtra("obj",obj);
-            startActivity(i1);
+//        btn_co_lai.setOnClickListener(view -> {
+//            Intent i1 = new Intent(getContext(), SearchVehiclesCoLai.class);
+//            i1.putExtra("obj",obj);
+//            startActivity(i1);
+//        });
+
+        btn_co_lai.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                PopupComing();
+            }
         });
 
-
-
         return v;
+    }
+    private void PopupComing() {
+        Dialog dialog = new Dialog(getContext());
+        dialog.setContentView(R.layout.loading_coming_soon);
+        dialog.show();
     }
 
     private List<Photo> getListPhoto(){
