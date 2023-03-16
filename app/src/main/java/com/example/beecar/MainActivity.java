@@ -137,7 +137,7 @@ public class MainActivity extends AppCompatActivity {
 
         for (User obj : userDAO.selectAll()) {
             if (!obj.getUser_name().equalsIgnoreCase(str_UserName) || !obj.getPassword().equalsIgnoreCase(str_Password)) {
-                Toast.makeText(this, "Đăng nhập thành cặc", Toast.LENGTH_SHORT).show();
+//                Toast.makeText(this, "Đăng nhập thành cặc", Toast.LENGTH_SHORT).show();
 
             } else {
                 if (obj.getUser_name().equalsIgnoreCase(str_UserName) && obj.getPassword().equalsIgnoreCase(str_Password) && obj.getPosition() == 0) {
