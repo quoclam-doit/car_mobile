@@ -3,11 +3,23 @@ package com.example.beecar.Model;
 import java.io.Serializable;
 
 public class Client implements Serializable {
-     int id;
-     String user_name;
-     String password;
-     String full_name;
-     int user_id;
+    int id;
+    String user_name;
+    String password;
+    String full_name;
+    String email;
+    String phone;
+    int user_id;
+
+    public Client(int id, String user_name, String password, String full_name, String email, String phone, int user_id) {
+        this.id = id;
+        this.user_name = user_name;
+        this.password = password;
+        this.full_name = full_name;
+        this.email = email;
+        this.phone = phone;
+        this.user_id = user_id;
+    }
 
     public Client() {
     }
@@ -17,7 +29,25 @@ public class Client implements Serializable {
     public static final String COL_user_name = "user_name";
     public static final String COL_password = "password";
     public static final String COL_full_name = "full_name";
+    public static final String COL_email = "email";
+    public static final String COL_phone = "phone";
     public static final String COL_user_id = "user_id";
+
+    public String getEmail() {
+        return email;
+    }
+
+    public void setEmail(String email) {
+        this.email = email;
+    }
+
+    public String getPhone() {
+        return phone;
+    }
+
+    public void setPhone(String phone) {
+        this.phone = phone;
+    }
 
     public int getId() {
         return id;

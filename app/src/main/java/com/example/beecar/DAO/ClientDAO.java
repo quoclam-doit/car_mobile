@@ -31,8 +31,10 @@ public class ClientDAO {
                 objC.setId(cursor.getInt(0));
                 objC.setUser_name(cursor.getString(1));
                 objC.setPassword(cursor.getString(2));
-                objC.setFull_name(cursor.getString(3));
-                objC.setUser_id(cursor.getInt(4));
+                objC.setEmail(cursor.getString(3));
+                objC.setPhone(cursor.getString(4));
+                objC.setFull_name(cursor.getString(5));
+                objC.setUser_id(cursor.getInt(6));
 
                 list.add(objC);
                 cursor.moveToNext();
@@ -48,6 +50,8 @@ public class ClientDAO {
         ContentValues values = new ContentValues();
         values.put(Client.COL_user_name,objC.getUser_name());
         values.put(Client.COL_password,objC.getPassword());
+        values.put(Client.COL_email, objC.getEmail());
+        values.put(Client.COL_phone, objC.getPhone());
         values.put(Client.COL_full_name,objC.getFull_name());
         values.put(Client.COL_user_id,objC.getUser_id());
         long row = db.insert(Client.TB_Name,null,values);
@@ -58,6 +62,8 @@ public class ClientDAO {
         ContentValues values = new ContentValues();
         values.put(Client.COL_user_name,objC.getUser_name());
         values.put(Client.COL_password,objC.getPassword());
+        values.put(Client.COL_email, objC.getEmail());
+        values.put(Client.COL_phone, objC.getPhone());
         values.put(Client.COL_full_name,objC.getFull_name());
         values.put(Client.COL_user_id,objC.getUser_id());
         int row = db.update(Client.TB_Name,values,"id=?", new String[]{objC.getId()+""});

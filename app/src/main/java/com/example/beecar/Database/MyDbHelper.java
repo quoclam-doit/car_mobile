@@ -12,7 +12,7 @@ import androidx.annotation.Nullable;
 import java.io.ByteArrayOutputStream;
 
 public class MyDbHelper extends SQLiteOpenHelper {
-    public static final String Name_db = "beeCarVip.db";
+    public static final String Name_db = "beeCar.db";
     public static final int Version_db =2 ;
 
 
@@ -29,11 +29,11 @@ public class MyDbHelper extends SQLiteOpenHelper {
         sqLiteDatabase.execSQL(tb_vehicles);
 
         // user
-        String tb_user = "create table if not exists  tb_user (id integer primary key autoincrement, user_name string,password string,full_name string,position int)";
+        String tb_user = "create table if not exists  tb_user (id integer primary key autoincrement, user_name string,password string, email string, phone string, full_name string,position int)";
         sqLiteDatabase.execSQL(tb_user);
         String tb_driver = "create table if not exists  tb_driver (id integer primary key autoincrement, user_name string,password string,full_name string,image_gplx blog,luongcb int,status_driver int , user_id references tb_user(id))";
         sqLiteDatabase.execSQL(tb_driver);
-        String tb_client = "create table if not exists  tb_client (id integer primary key autoincrement, user_name string,password string,full_name string, user_id references tb_user(id))";
+        String tb_client = "create table if not exists  tb_client (id integer primary key autoincrement, user_name string,password string, email sring, phone string, full_name string, user_id references tb_user(id))";
         sqLiteDatabase.execSQL(tb_client);
             //
         String tb_schedule = "create table if not exists  tb_schedule (id integer primary key autoincrement,dia_diem string,status_schedule string, start_time date, end_time date," +
