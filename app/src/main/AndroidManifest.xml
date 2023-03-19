@@ -45,7 +45,11 @@
             android:exported="true"
             />
 
+        <activity android:name=".MessageActivity"
+            android:exported="false"
+            >
 
+        </activity>
         <activity android:name=".ThongTinCaNhan"
             android:exported="false">
             <meta-data

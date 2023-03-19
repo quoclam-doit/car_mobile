@@ -1,5 +1,6 @@
 package com.example.beecar;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.os.Handler;
 import android.view.MenuItem;
@@ -60,6 +61,10 @@ public class HomeClient extends AppCompatActivity {
                             bunT.putSerializable("obj",user);
                             tfrg.setArguments(bunT);
                             replaceFrg(tfrg);
+                            break;
+                        case R.id.chat_client:
+                            Intent i = new Intent(HomeClient.this, MessageActivity.class);
+                            startActivity(i);
                             break;
                         case R.id.htClient:
                             SupportFragment frgS = new SupportFragment();

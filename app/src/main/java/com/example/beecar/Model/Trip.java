@@ -3,6 +3,8 @@ package com.example.beecar.Model;
 public class Trip {
     int id;
     String dia_diem;
+    String name;
+    String bien_ks;
     String start_time;
     String end_time;
     int status_trip;
@@ -10,6 +12,8 @@ public class Trip {
     int receipt_id;
     public static final String TB_name = "tb_trip";
     public static final String COL_dia_diem = "dia_diem";
+    public static final String COL_name = "name";
+    public static final String COL_bien_ks = "bien_ks";
     public static final String COL_start_time = "start_time";
     public static final String COL_end_time = "end_time";
     public static final String COL_status_trip = "status_trip";
@@ -20,6 +24,21 @@ public class Trip {
     public Trip() {
     }
 
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public String getBien_ks() {
+        return bien_ks;
+    }
+
+    public void setBien_ks(String bien_ks) {
+        this.bien_ks = bien_ks;
+    }
     public int getStatus_trip() {
         return status_trip;
     }

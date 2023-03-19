@@ -45,6 +45,8 @@ public class ReceiptAdapter extends RecyclerView.Adapter<ReceiptAdapter.viewhold
         final Receipt receipt = list.get(position);
         holder.tvMaKH.setText("ID Client: "+ receipt.getClient_id());
         holder.tvDiaDiem.setText("Địa điểm: " +  receipt.getDia_diem());
+        holder.tvNhanHieu.setText("Nhãn hiệu xe: " + receipt.getName());
+        holder.tvBienKS.setText("Biển kiểm soát: " + receipt.getBien_ks());
         holder.tvStart.setText("Ngày bắt đầu: " + receipt.getStart_time());
         holder.tvEnd.setText("Ngày kết thúc: " + receipt.getEnd_time());
         if (receipt.getStatus()== 0){
@@ -67,6 +69,8 @@ public class ReceiptAdapter extends RecyclerView.Adapter<ReceiptAdapter.viewhold
         LinearLayout item;
         TextView tvMaKH;
         TextView tvDiaDiem;
+        TextView tvNhanHieu;
+        TextView tvBienKS;
         TextView tvStart;
         TextView tvEnd;
         TextView tvStatus;
@@ -77,6 +81,8 @@ public class ReceiptAdapter extends RecyclerView.Adapter<ReceiptAdapter.viewhold
             item = itemView.findViewById(R.id.item_receipt);
             tvMaKH = itemView.findViewById(R.id.tv_id_client_rec);
             tvDiaDiem = itemView.findViewById(R.id.tv_dia_diem_rec);
+            tvNhanHieu = itemView.findViewById(R.id.tv_nhan_hieu_rec);
+            tvBienKS = itemView.findViewById(R.id.tv_bien_ks_rec);
             tvStart = itemView.findViewById(R.id.tv_start_rec);
             tvEnd = itemView.findViewById(R.id.tv_end_rec);
             tvStatus = itemView.findViewById(R.id.tv_status_rec);

@@ -34,11 +34,13 @@ public class ScheduleDAO {
                 Schedule schedule = new Schedule();
                 schedule.setId(cursor.getInt(0));
                 schedule.setDia_diem(cursor.getString(1));
-                schedule.setStatus_schedule(cursor.getInt(2));
-                schedule.setStart_time(cursor.getString(3));
-                schedule.setEnd_time(cursor.getString(4));
-                schedule.setDriver_id(cursor.getInt(5));
-                schedule.setReceipt_id(cursor.getInt(6));
+                schedule.setName(cursor.getString(2));
+                schedule.setBien_ks(cursor.getString(3));
+                schedule.setStatus_schedule(cursor.getInt(4));
+                schedule.setStart_time(cursor.getString(5));
+                schedule.setEnd_time(cursor.getString(6));
+                schedule.setDriver_id(cursor.getInt(7));
+                schedule.setReceipt_id(cursor.getInt(8));
                 list.add(schedule);
                 cursor.moveToNext();
             }
@@ -59,11 +61,13 @@ public class ScheduleDAO {
                 Schedule schedule = new Schedule();
                 schedule.setId(cursor.getInt(0));
                 schedule.setDia_diem(cursor.getString(1));
-                schedule.setStatus_schedule(cursor.getInt(2));
-                schedule.setStart_time(cursor.getString(3));
-                schedule.setEnd_time(cursor.getString(4));
-                schedule.setDriver_id(cursor.getInt(5));
-                schedule.setReceipt_id(cursor.getInt(6));
+                schedule.setName(cursor.getString(2));
+                schedule.setBien_ks(cursor.getString(3));
+                schedule.setStatus_schedule(cursor.getInt(4));
+                schedule.setStart_time(cursor.getString(5));
+                schedule.setEnd_time(cursor.getString(6));
+                schedule.setDriver_id(cursor.getInt(7));
+                schedule.setReceipt_id(cursor.getInt(8));
                 list.add(schedule);
                 cursor.moveToNext();
             }
@@ -84,11 +88,13 @@ public class ScheduleDAO {
                 Schedule schedule = new Schedule();
                 schedule.setId(cursor.getInt(0));
                 schedule.setDia_diem(cursor.getString(1));
-                schedule.setStatus_schedule(cursor.getInt(2));
-                schedule.setStart_time(cursor.getString(3));
-                schedule.setEnd_time(cursor.getString(4));
-                schedule.setDriver_id(cursor.getInt(5));
-                schedule.setReceipt_id(cursor.getInt(6));
+                schedule.setName(cursor.getString(2));
+                schedule.setBien_ks(cursor.getString(3));
+                schedule.setStatus_schedule(cursor.getInt(4));
+                schedule.setStart_time(cursor.getString(5));
+                schedule.setEnd_time(cursor.getString(6));
+                schedule.setDriver_id(cursor.getInt(7));
+                schedule.setReceipt_id(cursor.getInt(8));
                 list.add(schedule);
                 cursor.moveToNext();
             }
@@ -102,6 +108,8 @@ public class ScheduleDAO {
         SQLiteDatabase db = dbHelper.getWritableDatabase();
         ContentValues values = new ContentValues();
         values.put(Schedule.COL_dia_diem,obj.getDia_diem());
+        values.put(Schedule.COL_name, obj.getName());
+        values.put(Schedule.COL_bien_ks, obj.getBien_ks());
         values.put(Schedule.COL_status,obj.getStatus_schedule());
         values.put(Schedule.COL_start_time,obj.getStart_time());
         values.put(Schedule.COL_end_time,obj.getEnd_time());
@@ -117,6 +125,8 @@ public class ScheduleDAO {
         SQLiteDatabase db = dbHelper.getWritableDatabase();
         ContentValues values = new ContentValues();
         values.put(Schedule.COL_dia_diem,obj.getDia_diem());
+        values.put(Schedule.COL_name, obj.getName());
+        values.put(Schedule.COL_bien_ks, obj.getBien_ks());
         values.put(Schedule.COL_status,obj.getStatus_schedule());
         values.put(Schedule.COL_start_time,obj.getStart_time());
         values.put(Schedule.COL_end_time,obj.getEnd_time());

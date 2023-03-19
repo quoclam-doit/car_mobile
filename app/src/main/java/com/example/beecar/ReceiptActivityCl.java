@@ -196,6 +196,8 @@ public class ReceiptActivityCl extends AppCompatActivity {
         tripDAO = new TripDAO(this);
         Trip trip = new Trip();
         trip.setDia_diem(receipt.getDia_diem());
+        trip.setName(receipt.getBien_ks());
+        trip.setBien_ks(receipt.getName());
         trip.setStart_time(receipt.getStart_time());
         trip.setEnd_time(receipt.getEnd_time());
         trip.setClient_id(client.getId());
@@ -221,12 +223,14 @@ public class ReceiptActivityCl extends AppCompatActivity {
         scheduleDAO = new ScheduleDAO(this);
         Schedule schedule = new Schedule();
         schedule.setDia_diem(receipt.getDia_diem());
+        schedule.setName(receipt.getName());
+        schedule.setBien_ks(receipt.getBien_ks());
         schedule.setStart_time(receipt.getStart_time());
         schedule.setEnd_time(receipt.getEnd_time());
         schedule.setStatus_schedule(0);
         schedule.setDriver_id(driver_id);
         schedule.setReceipt_id(receipt.getId());
-        Log.e("rêcipt",receipt.getId()+"");
+        Log.e("receipt",receipt.getId()+"");
         if (scheduleDAO.insert(schedule)){
             Log.e("Add","Add thành công lịch trình");
 

@@ -11,11 +11,11 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
 
-        <LinearLayout
+        <ImageView
             android:layout_width="match_parent"
             android:layout_height="250dp"
-
-            android:background="@drawable/coming"
+            android:src="@drawable/coming"
+            android:background="@drawable/bg_border_radius_16"
             android:orientation="vertical">
 
 
@@ -39,6 +39,6 @@
 
             <!--            </LinearLayout>-->
 
-        </LinearLayout>
+        </ImageView>
     </RelativeLayout>
 </RelativeLayout>

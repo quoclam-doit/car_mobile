@@ -40,6 +40,8 @@ public class TripAdapter extends RecyclerView.Adapter<TripAdapter.viewholder> {
     public void onBindViewHolder(@NonNull TripAdapter.viewholder holder, int position) {
         final Trip trip = list.get(position);
         holder.tvDiaDiem.setText(trip.getDia_diem());
+        holder.tvNhanHieu.setText(trip.getName());
+        holder.tvBienSoXe.setText(trip.getBien_ks());
         holder.tvStart.setText(trip.getStart_time());
         holder.tvEnd.setText(trip.getEnd_time());
 
@@ -66,12 +68,16 @@ public class TripAdapter extends RecyclerView.Adapter<TripAdapter.viewholder> {
 
     public class viewholder extends RecyclerView.ViewHolder {
         TextView tvDiaDiem;
+        TextView tvBienSoXe;
+        TextView tvNhanHieu;
         TextView tvStart;
         TextView tvEnd;
         TextView tvStatus;
         public viewholder(@NonNull View itemView) {
             super(itemView);
             tvDiaDiem = itemView.findViewById(R.id.tv_dia_diem);
+            tvBienSoXe = itemView.findViewById(R.id.tv_bien_so_xe);
+            tvNhanHieu = itemView.findViewById(R.id.tv_nhan_hieu);
             tvStart = itemView.findViewById(R.id.tv_day_nhan);
             tvEnd = itemView.findViewById(R.id.tv_day_tra);
 //            tvStatus = itemView.findViewById(R.id.tv_status_trip);

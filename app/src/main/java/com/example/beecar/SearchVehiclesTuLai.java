@@ -180,6 +180,8 @@ public class SearchVehiclesTuLai extends AppCompatActivity {
         receipt.setName_driver("");
         receipt.setStatus_driver(0);
         receipt.setVehicles_id(obj.getId());
+        receipt.setName(obj.getName_car());
+        receipt.setBien_ks(obj.getBien_ks());
         Intent intent = new Intent(this,ReceiptActivity.class);
         intent.putExtra("obj",receipt);
         finish();

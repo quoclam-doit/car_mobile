@@ -5,6 +5,8 @@ public class Schedule {
     String start_time;
     String end_time;
     String dia_diem;
+    String name;
+    String bien_ks;
     int status_schedule;
     int driver_id;
     int receipt_id;
@@ -14,6 +16,9 @@ public class Schedule {
     public static final String TB_name = "tb_schedule";
     public static final String COL_id = "id";
     public static final String COL_dia_diem = "dia_diem";
+    public static final String COL_name = "name";
+    public static final String COL_bien_ks = "bien_ks";
+
     public static final String COL_status = "status_schedule";
     public static final String COL_start_time = "start_time";
     public static final String COL_end_time = "end_time";
@@ -34,6 +39,22 @@ public class Schedule {
 
     public void setDia_diem(String dia_diem) {
         this.dia_diem = dia_diem;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public String getBien_ks() {
+        return bien_ks;
+    }
+
+    public void setBien_ks(String bien_ks) {
+        this.bien_ks = bien_ks;
     }
 
     public int getId() {

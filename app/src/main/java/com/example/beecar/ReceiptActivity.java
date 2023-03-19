@@ -168,6 +168,8 @@ public class ReceiptActivity extends AppCompatActivity {
         tripDAO = new TripDAO(this);
         Trip trip = new Trip();
         trip.setDia_diem(receipt.getDia_diem());
+        trip.setName(receipt.getName());
+        trip.setBien_ks(receipt.getBien_ks());
         trip.setStart_time(receipt.getStart_time());
         trip.setEnd_time(receipt.getEnd_time());
         trip.setClient_id(client.getId());

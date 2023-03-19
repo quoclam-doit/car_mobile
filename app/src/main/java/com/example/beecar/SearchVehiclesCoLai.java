@@ -187,6 +187,8 @@ public class SearchVehiclesCoLai extends AppCompatActivity {
         receipt.setName_driver("");
         receipt.setStatus_driver(0);
         receipt.setVehicles_id(obj.getId());
+        receipt.setName(obj.getName_car());
+        receipt.setBien_ks(obj.getBien_ks());
 
         Intent intent = new Intent(this,ReceiptActivityCl.class);
         intent.putExtra("obj",receipt);

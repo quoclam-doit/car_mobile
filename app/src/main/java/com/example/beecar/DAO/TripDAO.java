@@ -32,11 +32,13 @@ public class TripDAO {
               Trip trip = new Trip();
               trip.setId(cursor.getInt(0));
               trip.setDia_diem(cursor.getString(1));
-              trip.setStart_time(cursor.getString(2));
-              trip.setEnd_time(cursor.getString(3));
-              trip.setStatus_trip(cursor.getInt(4));
-              trip.setClient_id(cursor.getInt(5));
-              trip.setReceipt_id(cursor.getInt(6));
+              trip.setName(cursor.getString(2));
+              trip.setBien_ks(cursor.getString(3));
+              trip.setStart_time(cursor.getString(4));
+              trip.setEnd_time(cursor.getString(5));
+              trip.setStatus_trip(cursor.getInt(6));
+              trip.setClient_id(cursor.getInt(7));
+              trip.setReceipt_id(cursor.getInt(8));
               list.add(trip);
               cursor.moveToNext();
             }
@@ -55,11 +57,13 @@ public class TripDAO {
                 Trip trip = new Trip();
                 trip.setId(cursor.getInt(0));
                 trip.setDia_diem(cursor.getString(1));
-                trip.setStart_time(cursor.getString(2));
-                trip.setEnd_time(cursor.getString(3));
-                trip.setStatus_trip(cursor.getInt(4));
-                trip.setClient_id(cursor.getInt(5));
-                trip.setReceipt_id(cursor.getInt(6));
+                trip.setName(cursor.getString(2));
+                trip.setBien_ks(cursor.getString(3));
+                trip.setStart_time(cursor.getString(4));
+                trip.setEnd_time(cursor.getString(5));
+                trip.setStatus_trip(cursor.getInt(6));
+                trip.setClient_id(cursor.getInt(7));
+                trip.setReceipt_id(cursor.getInt(8));
                 list.add(trip);
                 cursor.moveToNext();
             }
@@ -78,11 +82,13 @@ public class TripDAO {
                 Trip trip = new Trip();
                 trip.setId(cursor.getInt(0));
                 trip.setDia_diem(cursor.getString(1));
-                trip.setStart_time(cursor.getString(2));
-                trip.setEnd_time(cursor.getString(3));
-                trip.setStatus_trip(cursor.getInt(4));
-                trip.setClient_id(cursor.getInt(5));
-                trip.setReceipt_id(cursor.getInt(6));
+                trip.setName(cursor.getString(2));
+                trip.setBien_ks(cursor.getString(3));
+                trip.setStart_time(cursor.getString(4));
+                trip.setEnd_time(cursor.getString(5));
+                trip.setStatus_trip(cursor.getInt(6));
+                trip.setClient_id(cursor.getInt(7));
+                trip.setReceipt_id(cursor.getInt(8));
                 list.add(trip);
                 cursor.moveToNext();
             }
@@ -95,6 +101,8 @@ public class TripDAO {
         SQLiteDatabase db = dbHelper.getWritableDatabase();
         ContentValues values = new ContentValues();
         values.put(Trip.COL_dia_diem,trip.getDia_diem());
+        values.put(Trip.COL_name, trip.getName());
+        values.put(Trip.COL_bien_ks, trip.getBien_ks());
         values.put(Trip.COL_start_time,trip.getStart_time());
         values.put(Trip.COL_end_time,trip.getEnd_time());
         values.put(Trip.COL_status_trip,trip.getStatus_trip());
@@ -108,6 +116,8 @@ public class TripDAO {
         SQLiteDatabase db = dbHelper.getWritableDatabase();
         ContentValues values = new ContentValues();
         values.put(Trip.COL_dia_diem,trip.getDia_diem());
+        values.put(Trip.COL_name, trip.getName());
+        values.put(Trip.COL_bien_ks, trip.getBien_ks());
         values.put(Trip.COL_start_time,trip.getStart_time());
         values.put(Trip.COL_end_time,trip.getEnd_time());
         values.put(Trip.COL_status_trip,trip.getStatus_trip());

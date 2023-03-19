@@ -12,7 +12,7 @@ import androidx.annotation.Nullable;
 import java.io.ByteArrayOutputStream;
 
 public class MyDbHelper extends SQLiteOpenHelper {
-    public static final String Name_db = "beeCar.db";
+    public static final String Name_db = "beeCar3.db";
     public static final int Version_db =2 ;
 
 
@@ -36,17 +36,17 @@ public class MyDbHelper extends SQLiteOpenHelper {
         String tb_client = "create table if not exists  tb_client (id integer primary key autoincrement, user_name string,password string, email sring, phone string, full_name string, user_id references tb_user(id))";
         sqLiteDatabase.execSQL(tb_client);
             //
-        String tb_schedule = "create table if not exists  tb_schedule (id integer primary key autoincrement,dia_diem string,status_schedule string, start_time date, end_time date," +
+        String tb_schedule = "create table if not exists  tb_schedule (id integer primary key autoincrement,dia_diem string, name string, bien_ks string, status_schedule string, start_time date, end_time date," +
                 " driver_id references tb_driver(id)," +
                 " receipt_id references tb_receipt(id))";
         sqLiteDatabase.execSQL(tb_schedule);
-        String tb_trip ="create table if not exists  tb_trip (id integer primary key autoincrement,dia_diem string,start_time date, end_time date,status_trip int," +
+        String tb_trip ="create table if not exists  tb_trip (id integer primary key autoincrement,dia_diem string, name string, bien_ks string, start_time date, end_time date,status_trip int," +
                 "client_id references tb_client(id)," +
                 "receipt_id references tb_receipt(id))";
         sqLiteDatabase.execSQL(tb_trip);
 
         // receipt
-        String tb_receipt = "create table if not exists tb_receipt (id integer primary key autoincrement,name_client string,name_driver string,oder_time date, start_time date,end_time date,status_driver int , status_receipt int, total int,dia_diem string , " +
+        String tb_receipt = "create table if not exists tb_receipt (id integer primary key autoincrement,name_client string,name_driver string, name string, bien_ks string, oder_time date, start_time date,end_time date,status_driver int , status_receipt int, total int,dia_diem string , " +
                 "client_id references tb_client(id)," +
                 "" +
                 "vehicles_id references tb_vehicles(id))";

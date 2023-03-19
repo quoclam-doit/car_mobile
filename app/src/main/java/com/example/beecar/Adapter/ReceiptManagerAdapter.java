@@ -222,6 +222,8 @@ public class ReceiptManagerAdapter extends RecyclerView.Adapter<ReceiptManagerAd
         tripDAO = new TripDAO(context);
         Trip trip = new Trip();
         trip.setDia_diem(receipt.getDia_diem());
+        trip.setName(receipt.getName());
+        trip.setBien_ks(receipt.getBien_ks());
         trip.setStart_time(receipt.getStart_time());
         trip.setEnd_time(receipt.getEnd_time());
         trip.setClient_id(client.getId());
@@ -246,6 +248,8 @@ public class ReceiptManagerAdapter extends RecyclerView.Adapter<ReceiptManagerAd
         scheduleDAO = new ScheduleDAO(context);
         Schedule schedule = new Schedule();
         schedule.setDia_diem(receipt.getDia_diem());
+        schedule.setName(receipt.getName());
+        schedule.setBien_ks(receipt.getBien_ks());
         schedule.setStart_time(receipt.getStart_time());
         schedule.setEnd_time(receipt.getEnd_time());
         if (receipt.getStart_time().equals(receipt.getOder_time())){

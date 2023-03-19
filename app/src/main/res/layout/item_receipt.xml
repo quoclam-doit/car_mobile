@@ -42,7 +42,19 @@
                 android:layout_height="wrap_content"
                 android:layout_marginRight="10dp"
                 android:text="Địa điểm:" />
+            <TextView
+                android:id="@+id/tv_nhan_hieu_rec"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dp"
+                android:text="Nhãn hiệu xe:" />
 
+            <TextView
+                android:id="@+id/tv_bien_ks_rec"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dp"
+                android:text="Biển kiểm soát:" />
             <TextView
                 android:id="@+id/tv_start_rec"
                 android:layout_width="wrap_content"

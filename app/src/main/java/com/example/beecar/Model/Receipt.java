@@ -6,6 +6,8 @@ public class Receipt implements Serializable {
     int id;
     String name_client;
     String name_driver;
+    String name;
+    String bien_ks;
     String dia_diem;
     String oder_time;
     String start_time;
@@ -19,6 +21,8 @@ public class Receipt implements Serializable {
     public static final String TB_name ="tb_receipt";
     public static final String COL_name_client ="name_client";
     public static final String COL_name_driver ="name_driver";
+    public static final String COL_name ="name";
+    public static final String COL_bien_ks ="bien_ks";
     public static final String COL_dia_diem ="dia_diem";
     public static final String COL_oder ="oder_time";
     public static final String COL_start ="start_time";
@@ -44,6 +48,22 @@ public class Receipt implements Serializable {
 
     public void setDia_diem(String dia_diem) {
         this.dia_diem = dia_diem;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public String getBien_ks() {
+        return bien_ks;
+    }
+
+    public void setBien_ks(String bien_ks) {
+        this.bien_ks = bien_ks;
     }
 
     public void setId(int id) {
