@@ -63,7 +63,7 @@ public class HomeClient extends AppCompatActivity {
                             replaceFrg(tfrg);
                             break;
                         case R.id.chat_client:
-                            Intent i = new Intent(HomeClient.this, MessageActivity.class);
+                            Intent i = new Intent(HomeClient.this, ChatBOTMessage.class);
                             startActivity(i);
                             break;
                         case R.id.htClient:

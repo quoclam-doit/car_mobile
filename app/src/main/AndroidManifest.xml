@@ -45,6 +45,10 @@
             android:exported="true"
             />
 
+
+        <activity android:name=".ChatBOTMessage">
+
+        </activity>
         <activity android:name=".MessageActivity"
             android:exported="false"
             >
